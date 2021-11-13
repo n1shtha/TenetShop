@@ -1,0 +1,113 @@
+.banner {
+  background-image: linear-gradient(to right, #d3c3c385, #776767);
+  height: 100vmin;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  color: black;
+}
+
+.banner > h1 {
+  margin: 5vmax;
+  font: 600 2.5vmax "Raleway";
+}
+
+.banner > p {
+  font: 300 1.4vmax "Raleway";
+}
+
+.banner > a > button {
+  margin-bottom: 5vmax;
+  cursor: pointer;
+  background-color: white;
+  border: 1px solid white;
+  border-radius: 0;
+  padding: 1vmax;
+  transition: all 0.5s;
+  width: 9vmax;
+  font: 500 1vmax "Raleway";
+}
+
+.homeHeading {
+  text-align: center;
+  font-family: "Raleway", sans-serif;
+  font-size: 1.4vmax;
+  border-bottom: 1px solid black;
+  width: 20vmax;
+  padding: 0.5vmax;
+  margin: 5vmax auto;
+}
+
+.container {
+  display: flex;
+  margin: 2vmax auto;
+  width: 80vw;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 100%;
+}
+
+.productCard {
+  width: 14vmax;
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+  color: rgb(48, 48, 48);
+  margin: 2vmax;
+  transition: all 0.4s;
+  padding-bottom: 0.5vmax;
+}
+
+.productCard > img {
+  width: 14vmax;
+}
+
+.productCard > div {
+  margin: 0.5vmax;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.productCard > div > span {
+  margin: 0.5vmax;
+  font: 300 0.8vmax "Raleway";
+}
+
+.productCard > p {
+  font-family: "Raleway", sans-serif;
+  font-size: 1.2vmax;
+  margin: 1vmax 0.5vmax;
+  margin-bottom: 0;
+}
+
+.productCard > span {
+  margin: 0.5vmax;
+  color: rgb(48, 48, 48);
+  font-family: "Raleway", sans-serif;
+}
+
+.productCard:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+@media screen and (max-width: 600px) {
+  .productCard > p {
+    font-size: 1.7vmax;
+  }
+
+  .productCard > div {
+    margin: 0vmax;
+    display: block;
+  }
+
+  .productCard > span {
+    font-size: 1.5vh;
+  }
+
+  .productCard > div > span {
+    margin: 0 0.5vmax;
+    font: 300 1vmax "Raleway";
+  }
+}

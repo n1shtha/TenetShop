@@ -1,0 +1,58 @@
+header {
+  padding: 8px;
+  background-color: #f2f1ef;
+  color: rgb(15, 15, 15);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header i {
+  margin-inline: 20px;
+  display: flex;
+}
+
+a.brand {
+  color: #202020;
+  font-size: 4rem;
+  font-family: "Italiana", serif;
+  margin-inline: 20px;
+  display: flex;
+}
+
+a.category {
+  color: #1f1e1e;
+  font-size: 1rem;
+  font-family: "Raleway", sans-serif;
+  margin-inline: 20px;
+}
+
+.search {
+  width: 20%;
+  display: flex;
+}
+
+.searchTerm {
+  width: 100%;
+  border: thin;
+  padding: 5px;
+  height: 26px;
+  border-radius: 5px 0 0 5px;
+  outline: none;
+}
+
+.searchTerm:focus {
+  color: #252525;
+}
+
+.searchButton {
+  width: 40px;
+  height: 36px;
+  border: thin;
+  background: rgb(221, 217, 217);
+  text-align: center;
+  color: black;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+  font-size: 20px;
+}
