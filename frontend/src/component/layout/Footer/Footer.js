@@ -7,19 +7,19 @@ import "./Footer.css";
 const Footer = () => {
   return (
     <footer id="footer">
-      <div class="leftFooter">
+      <div className="leftFooter">
         <h4>Our social media:</h4>
         <p>INSTAGRAM: @tenetwatches</p>
         <p>TWITTER: @tenetwatches</p>
         <p>VSCO: @tenetwatches</p>
         <p>LINKEDIN: Tenet Co.</p>
       </div>
-      <div class="midFooter">
+      <div className="midFooter">
         <h1>TENET</h1>
         <p>For all things time.</p>
         <p>Copyrights 2021 &copy; Tenet</p>
       </div>
-      <div class="rightFooter">
+      <div className="rightFooter">
         <h4>Contact us!</h4>
         <p>EMAIL: tenetwatches@gmail.com</p>
         <p>TELEPHONE: +1 412-278-5539</p>
