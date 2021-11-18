@@ -1,0 +1,217 @@
+.loginSignupContainer {
+  width: 100vw;
+  height: 100vh;
+  max-width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(58, 43, 43);
+  position: fixed;
+  top: 0%;
+  left: 0;
+}
+
+.loginSignupBox {
+  background-color: #f2f1ef;
+  width: 30vw;
+  height: 70vh;
+  box-sizing: border-box;
+  border: 1px solid #cfcfcf;
+  border-radius: 2px;
+  overflow: hidden;
+}
+
+.login_signup_toggle {
+  display: flex;
+  height: 3vmax;
+}
+
+.login_signup_toggle > p {
+  color: black;
+  font: 300 1vmax "Raleway";
+  transition: all 0.4s;
+  cursor: pointer;
+  display: grid;
+  place-items: center;
+  width: 100%;
+}
+
+.login_signup_toggle > p:hover {
+  color: #bcaca4;
+}
+
+.loginSignupBox > div > button {
+  background-color: #aca393;
+  height: 3px;
+  width: 50%;
+  border: none;
+  transition: all 0.4s;
+}
+
+.loginForm,
+.signupForm {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: auto;
+  padding: 2vmax;
+  justify-content: space-evenly;
+  height: 70%;
+  transition: all 0.4s;
+}
+
+.signupForm {
+  transform: translateY(-100%) translateX(-100vmax);
+}
+
+.loginForm > div,
+.signupForm > div {
+  display: flex;
+  width: 100%;
+  align-items: center;
+}
+
+.loginForm > div > input,
+.signupForm > div > input {
+  padding: 1vmax 4vmax;
+  padding-right: 1vmax;
+  width: 100%;
+  box-sizing: border-box;
+  border: 1px solid #cfcfcf;
+  border-radius: 4px;
+  font: 300 0.9vmax "Raleway";
+  outline: none;
+}
+
+.loginForm > div > svg,
+.signupForm > div > svg {
+  position: absolute;
+  transform: translateX(1vmax);
+  font-size: 1.6vmax;
+}
+
+.loginForm > a {
+  color: black;
+  text-decoration: none;
+  transition: all 0.4s;
+  font: 500 0.8vmax "Raleway";
+}
+
+.loginForm > a:hover {
+  color: black;
+}
+
+#registerImage > img {
+  width: 3vmax;
+  border-radius: 100%;
+}
+
+#registerImage > input {
+  display: flex;
+  padding: 0%;
+}
+
+#registerImage > input::file-selector-button {
+  cursor: pointer;
+  width: 100%;
+  z-index: 2;
+  height: 5vh;
+  border: none;
+  margin: 0%;
+  font: 400 0.8vmax "Raleway";
+  transition: all 0.4s;
+  padding: 0 1vmax;
+  color: black;
+  background-color: rgb(241, 238, 234);
+}
+
+#registerImage > input::file-selector-button:hover {
+  background-color: rgb(228, 225, 220);
+}
+
+.loginBtn,
+.signupBtn {
+  border: none;
+  background-color: rgb(24, 23, 23);
+  color: #aca393;
+  font: 300 0.9vmax "Raleway";
+  width: 50%;
+  padding: 0.8vmax;
+  cursor: pointer;
+  transition: all 0.4s;
+  outline: none;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.219);
+}
+
+.loginBtn:hover,
+.signupBtn:hover {
+  background-color: rgb(68, 67, 67);
+}
+
+.shiftToLeft {
+  transform: translateX(-100%);
+}
+
+.shiftToNeutral {
+  transform: translateX(0%);
+}
+
+.shiftToNeutralForm {
+  transform: translateX(0%) translateY(-100%);
+}
+
+.shiftToRight {
+  transform: translateX(100%);
+}
+
+@media screen and (max-width: 600px) {
+  .LoginSignUpContainer {
+    background-color: #f2f1ef;
+  }
+  .LoginSignUpBox {
+    width: 100vw;
+    height: 95vh;
+  }
+  .login_signUp_toggle {
+    height: 5vmax;
+  }
+  .login_signUp_toggle > p {
+    font: 300 1.5vmax "Raleway";
+  }
+
+  .loginForm,
+  .signUpForm {
+    padding: 5vmax;
+  }
+
+  .loginForm > div > input,
+  .signUpForm > div > input {
+    padding: 2.5vmax 5vmax;
+    font: 300 1.7vmax "Raleway";
+  }
+
+  .loginForm > div > svg,
+  .signUpForm > div > svg {
+    font-size: 2.8vmax;
+  }
+
+  .loginForm > a {
+    font: 500 1.8vmax "Raleway";
+  }
+
+  #registerImage > img {
+    width: 8vmax;
+    border-radius: 100%;
+  }
+
+  #registerImage > input::file-selector-button {
+    height: 7vh;
+    font: 400 1.8vmax "Raleway";
+  }
+
+  .loginBtn,
+  .signUpBtn {
+    font: 300 1.9vmax "Raleway";
+    padding: 1.8vmax;
+  }
+}
