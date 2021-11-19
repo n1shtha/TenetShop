@@ -10,12 +10,10 @@ import { useAlert } from "react-alert";
 const Home = () => {
   const alert = useAlert();
   const dispatch = useDispatch();
-  const { loading, error, products, productsCount } = useSelector(
-    (state) => state.products
-  );
+  const { loading, error, products } = useSelector((state) => state.products);
 
   useEffect(() => {
-    if(error){
+    if (error) {
       alert.error(error);
       dispatch(clearErrors());
     }
@@ -25,22 +23,20 @@ const Home = () => {
   return (
     <Fragment>
       {loading ? (
-        <Loader/>
-        ): (
+        <Loader />
+      ) : (
         <Fragment>
-        <MetaData title="TENET" />
-        <div className="banner">
-          <p>WELCOME TO TENET</p>
-          <h1>Diwali Sale ongoing!</h1>
-        </div>
-        <h2 className="homeHeading">FEATURED PRODUCTS</h2>
-        <div className="container" id="container">
-          {products && 
-           products.map((product) => (
-           <Product product={product} />
-           ))}
-        </div>
-      </Fragment>
+          <MetaData title="TENET" />
+          <div className="banner">
+            <p>WELCOME TO TENET</p>
+            <h1>Diwali Sale ongoing!</h1>
+          </div>
+          <h2 className="homeHeading">FEATURED PRODUCTS</h2>
+          <div className="container" id="container">
+            {products &&
+              products.map((product) => <Product product={product} />)}
+          </div>
+        </Fragment>
       )}
     </Fragment>
   );
