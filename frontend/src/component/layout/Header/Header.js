@@ -24,6 +24,7 @@ const Header = () => {
         </a>
       </div>
       <div>
+        <i className="fa fa-search" aria-hidden="true"></i>
         <i className="fa fa-shopping-cart" aria-hidden="true"></i>
         <i className="fa fa-heart" aria-hidden="true"></i>
         <i className="fa fa-user" aria-hidden="true"></i>
