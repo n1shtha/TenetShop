@@ -21,7 +21,7 @@ const ProductDetails = ({ match }) => {
         color: "rgba(20,20,20,0.1)",
         activeColor: "gold",
         size: window.innerWidth < 600 ? 15 : 20,
-        value: product?.rating,
+        value: product?.ratings,
         isHalf: true,
       };
 
@@ -64,7 +64,7 @@ const ProductDetails = ({ match }) => {
                             <div className="detailsBlock-2">
                             <ReactStars {...options} />
                             <span>
-                            ({product?.numReviews} reviews)
+                            ({product?.numOfReviews} reviews)
                             </span>
                             </div>
 
