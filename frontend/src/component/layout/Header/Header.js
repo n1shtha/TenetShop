@@ -14,16 +14,20 @@ const Header = () => {
           WATCHES
         </a>
         <a href className="category">
-          JEWELRY
-        </a>
-        <a href className="category">
           BESTSELLERS
         </a>
         <a href className="category">
           DIWALI SALE
         </a>
+        <a href="\products" className="category">
+          PRODUCTS
+        </a>
       </div>
       <div>
+        
+        <a className="search-btn" href="\search">
+        <i className="fa fa-search" aria-hidden="true"></i>
+        </a>
         <i className="fa fa-shopping-cart" aria-hidden="true"></i>
         <i className="fa fa-heart" aria-hidden="true"></i>
         <i className="fa fa-user" aria-hidden="true"></i>

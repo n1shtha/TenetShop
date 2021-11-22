@@ -7,6 +7,7 @@ import { useAlert } from "react-alert";
 import ReactStars from "react-rating-stars-component";
 import ReviewCard from "./ReviewCard.js";
 import Loader from "../layout/Loader/Loader";
+import MetaData from "../layout/MetaData";
 
 const ProductDetails = ({ match }) => {
   const dispatch = useDispatch();
@@ -16,14 +17,14 @@ const ProductDetails = ({ match }) => {
     (state) => state.productDetails
   );
 
-  const options = {
-    edit: false,
-    color: "rgba(20,20,20,0.1)",
-    activeColor: "gold",
-    size: window.innerWidth < 600 ? 15 : 20,
-    value: product?.rating,
-    isHalf: true,
-  };
+    const options = {
+        edit: false,
+        color: "rgba(20,20,20,0.1)",
+        activeColor: "gold",
+        size: window.innerWidth < 600 ? 15 : 20,
+        value: product?.ratings,
+        isHalf: true,
+      };
 
   useEffect(() => {
     if (error) {
@@ -41,6 +42,7 @@ const ProductDetails = ({ match }) => {
         <Loader />
       ) : (
         <Fragment>
+          <MetaData title={`${product.name} -- ECOMMERCE`} />
           <div className="ProductDetails">
             <div>
               <Carousel>
