@@ -29,7 +29,7 @@ const Home = () => {
           <MetaData title="TENET" />
           <div className="banner">
             <p>WELCOME TO TENET</p>
-            <h1>Diwali Sale ongoing!</h1>
+            <h1>For all things time</h1>
           </div>
           <h2 className="homeHeading">FEATURED PRODUCTS</h2>
           <div className="container" id="container">

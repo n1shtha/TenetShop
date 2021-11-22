@@ -1,5 +1,9 @@
+body {
+  margin: 0px;
+}
+
 .banner {
-  background-image: linear-gradient(to right, #d3c3c385, #776767);
+  background-image: url("../../../src/images/banner1.jpg");
   height: 100vmin;
   display: flex;
   flex-direction: column;
@@ -16,18 +20,6 @@
 
 .banner > p {
   font: 300 1.4vmax "Raleway";
-}
-
-.banner > a > button {
-  margin-bottom: 5vmax;
-  cursor: pointer;
-  background-color: white;
-  border: 1px solid white;
-  border-radius: 0;
-  padding: 1vmax;
-  transition: all 0.5s;
-  width: 9vmax;
-  font: 500 1vmax "Raleway";
 }
 
 .homeHeading {

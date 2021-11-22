@@ -1,8 +1,8 @@
 footer {
   margin-top: 55vmax;
   padding: 2vmax;
-  background-color: rgb(34, 33, 33);
-  color: white;
+  background-color: #f2f1ef;
+  color: rgb(15, 15, 15);
   display: flex;
   align-items: center;
 }
