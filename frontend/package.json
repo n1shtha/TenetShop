@@ -15,6 +15,7 @@
     "@testing-library/react": "^11.2.7",
     "@testing-library/user-event": "^12.8.3",
     "axios": "^0.24.0",
+    "immer": "^9.0.6",
     "material-ui-search-bar": "^1.0.0",
     "overlay-navbar": "^1.1.1",
     "react": "^17.0.2",
@@ -57,5 +58,5 @@
       "last 1 safari version"
     ]
   },
-  "proxy": "http://192.168.56.1:4000"
+  "proxy": "http://localhost:4000"
 }
