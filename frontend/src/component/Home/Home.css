@@ -54,6 +54,8 @@ body {
 
 .productCard > img {
   width: 14vmax;
+  height: 16vmax;
+  object-fit: contain;
 }
 
 .productCard > div {
