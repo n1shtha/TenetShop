@@ -17,14 +17,14 @@ const ProductDetails = ({ match }) => {
     (state) => state.productDetails
   );
 
-    const options = {
-        edit: false,
-        color: "rgba(20,20,20,0.1)",
-        activeColor: "gold",
-        size: window.innerWidth < 600 ? 15 : 20,
-        value: product?.rating,
-        isHalf: true,
-      };
+  const options = {
+    edit: false,
+    color: "rgba(20,20,20,0.1)",
+    activeColor: "#cbbc9a",
+    size: window.innerWidth < 600 ? 15 : 20,
+    value: product?.rating,
+    isHalf: true,
+  };
 
   useEffect(() => {
     if (error) {
@@ -50,7 +50,7 @@ const ProductDetails = ({ match }) => {
                   product?.images.map((item, i) => (
                     <img
                       className="CarouselImage"
-                      key={item.url}
+                      key={i}
                       src={item.url}
                       alt={`${i} Slide`}
                     />
@@ -76,7 +76,8 @@ const ProductDetails = ({ match }) => {
                     <input value="1" type="number" />
                     <button>+</button>
                   </div>
-                  <button>Add to Cart</button>
+                  <button>ADD TO CART</button>
+                  <button>ADD TO WISHLIST</button>
                 </div>
                 <p>
                   Status:
@@ -87,10 +88,10 @@ const ProductDetails = ({ match }) => {
               </div>
 
               <div className="detailsBlock-4">
-                Description : <p>{product?.description}</p>
+                Description: <p>{product?.description}</p>
               </div>
 
-              <button className="submitReview">Submit Review</button>
+              <button className="submitReview">SUBMIT REVIEW</button>
             </div>
           </div>
 
@@ -103,7 +104,7 @@ const ProductDetails = ({ match }) => {
                 ))}
             </div>
           ) : (
-            <p className="noOfReviews">No Reviews Yet</p>
+            <p className="noReviews">No Reviews Yet</p>
           )}
         </Fragment>
       )}

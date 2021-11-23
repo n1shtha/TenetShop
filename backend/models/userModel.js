@@ -31,6 +31,8 @@ const userSchema = new mongoose.Schema({
     url: {
       type: String,
       required: true,
+      default:
+        "https://res.cloudinary.com/tenet/image/upload/v1637233507/avatars/karll3jnyjoqxgwhl6qd.png",
     },
   },
   role: {
