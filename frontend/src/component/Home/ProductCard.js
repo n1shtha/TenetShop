@@ -8,7 +8,7 @@ const ProductCard = ({ product }) => {
     color: "rgba(20,20,20,0.1)",
     activeColor: "gold",
     size: window.innerWidth < 600 ? 15 : 20,
-    value: product.ratings,
+    value: product.rating,
     isHalf: true,
   };
   return (

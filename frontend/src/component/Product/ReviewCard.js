@@ -1,6 +1,6 @@
 import ReactStars from "react-rating-stars-component";
 import React from "react";
-import profilePng from "../../images/profile.png";
+import profilePng from "../../images/Profile.png";
 
 const ReviewCard = ({review}) => {
 
@@ -9,7 +9,7 @@ const ReviewCard = ({review}) => {
         color: "rgba(20,20,20,0.1)",
         activeColor: "gold",
         size: window.innerWidth < 600 ? 15 : 20,
-        value: review?.ratings,
+        value: review?.rating,
         isHalf: true,
       };
     return (<div className="reviewCard">
