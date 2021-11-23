@@ -18,7 +18,7 @@ const Products = ({ match }) => {
   const [currentPage, setCurrentPage] = useState(1);
   const [price, setPrice] = useState([0, 25000]);
   const [category, setCategory] = useState("");
-  const [rating, setRatings] = useState(0);
+  const [rating, setRating] = useState(0);
 
   const { products, loading, error, productsCount, resultPerPage } =
     useSelector((state) => state.products);
@@ -32,14 +32,14 @@ const Products = ({ match }) => {
     setPrice(newPrice);
   };
 
-  useEffect(() => {
-    if (error) {
-      alert.error(error);
-      dispatch(clearErrors);
-    }
-    dispatch(getProduct(keyword, currentPage, price, category, rating));
-  }, [dispatch, keyword, currentPage, price, category, rating, alert, error]);
 
+    useEffect(() => {
+        if(error) {
+            alert.error(error);
+            dispatch(clearErrors);
+        }
+        dispatch(getProduct(keyword, currentPage, price, category, rating));
+    }, [dispatch,keyword, currentPage, price, category, rating, alert, error]);
   //let count = filteredProductsCount;
 
   return (
@@ -81,11 +81,11 @@ const Products = ({ match }) => {
             </ul>
 
             <fieldset>
-              <Typography component="legend">Ratings Above</Typography>
+              <Typography component="legend">rating Above</Typography>
               <Slider
                 value={rating}
                 onChange={(e, newRating) => {
-                  setRatings(newRating);
+                  setRating(newRating);
                 }}
                 aria-labelledby="continuous-slider"
                 valueLabelDisplay="auto"
