@@ -5,7 +5,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: rgb(58, 43, 43);
+  background-image: url("../../../src/images/banner1.jpg");
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   position: fixed;
   top: 0%;
   left: 0;
@@ -16,7 +17,7 @@
   width: 30vw;
   height: 70vh;
   box-sizing: border-box;
-  border: 1px solid #cfcfcf;
+  border: thin;
   border-radius: 2px;
   overflow: hidden;
 }
@@ -133,7 +134,7 @@
 .signupBtn {
   border: none;
   background-color: rgb(24, 23, 23);
-  color: #aca393;
+  color: #998d79;
   font: 300 0.9vmax "Raleway";
   width: 50%;
   padding: 0.8vmax;

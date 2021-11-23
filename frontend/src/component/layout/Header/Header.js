@@ -10,26 +10,32 @@ const Header = () => {
         </a>
       </div>
       <div>
-        <a href className="category">
-          WATCHES
-        </a>
-        <a href className="category">
-          BESTSELLERS
-        </a>
-        <a href className="category">
-          DIWALI SALE
+        <a href="\" className="category">
+          HOME
         </a>
         <a href="\products" className="category">
-          PRODUCTS
+          ALL WATCHES
+        </a>
+        <a href="\bestsellers" className="category">
+          BESTSELLERS
+        </a>
+        <a href="\sale" className="category">
+          DIWALI SALE
         </a>
       </div>
       <div>
         <a className="search-btn" href="\search">
           <i className="fa fa-search" aria-hidden="true"></i>
         </a>
-        <i className="fa fa-shopping-cart" aria-hidden="true"></i>
-        <i className="fa fa-heart" aria-hidden="true"></i>
-        <i className="fa fa-user" aria-hidden="true"></i>
+        <a className="cart-btn" href="\cart">
+          <i className="fa fa-shopping-cart" aria-hidden="true"></i>
+        </a>
+        <a className="cart-btn" href="\wishlist">
+          <i className="fa fa-heart" aria-hidden="true"></i>
+        </a>
+        <a className="user-btn" href="\login">
+          <i className="fa fa-user" aria-hidden="true"></i>
+        </a>
       </div>
     </header>
   );

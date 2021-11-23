@@ -14,7 +14,7 @@
   align-items: center;
   padding: 2vmax;
   box-sizing: border-box;
-  border: 1px solid rgb(22, 19, 19);
+  border: thin;
 }
 
 .ProductDetails > div:last-child {
@@ -27,27 +27,29 @@
 
 .detailsBlock-1 > h2 {
   color: rgb(54, 54, 54);
-  font: 600 1.6vmax "Roboto";
+  font: 600 1.6vmax "Raleway";
 }
 
 .detailsBlock-1 > p {
   color: rgba(54, 54, 54, 0.582);
-  font: 200 0.6vmax cursive;
+  font: 200 0.6vmax "Raleway";
 }
 
 .detailsBlock-2 {
   display: flex;
   justify-content: flex-start;
   align-items: center;
+  font: 200 0.8vmax "Raleway";
   border-top: 1px solid rgba(0, 0, 0, 0.205);
   border-bottom: 1px solid rgba(0, 0, 0, 0.205);
   width: 70%;
   padding: 1vmax 0;
 }
 
-.detailsBlock-2-span {
-  font: 200 0.8vmax cursive;
+.detailsBlock-2 > span {
+  font: 300 0.8vmax "Raleway";
   color: rgba(0, 0, 0, 0.699);
+  margin-left: 0.5vmax;
 }
 
 .detailsBlock-3 {
@@ -56,9 +58,10 @@
 
 .detailsBlock-3 > h1 {
   color: rgba(17, 17, 17, 0.795);
-  font: 400 1.8vmax "Franklin Gothic Medium";
+  font: 400 1.8vmax "Raleway";
   margin: 1vmax 0;
 }
+
 .detailsBlock-3-1 {
   display: flex;
   align-items: center;
@@ -71,6 +74,7 @@
   cursor: pointer;
   color: white;
   transition: all 0.5s;
+  margin-inline-end: 0.5vmax;
 }
 
 .detailsBlock-3-1-1 > button:hover {
@@ -79,29 +83,32 @@
 
 .detailsBlock-3-1-1 > input {
   border: none;
-  padding: 0.5vmax;
+  padding-left: 0vmax;
+  padding-right: 0.5vmax;
   width: 1vmax;
   text-align: center;
   outline: none;
-  font: 400 0.8vmax "Roboto";
+  font: 400 0.8vmax "Raleway";
   color: rgba(0, 0, 0, 0.74);
+  margin: 0;
 }
 
-.detailsBlock-3-1 > button:last-child {
+.detailsBlock-3-1 > button {
+  width: 35%;
   border: none;
   cursor: pointer;
-  color: rgb(255, 255, 255);
-  transition: all 0.5s;
-  background-color: rgb(161, 105, 95);
-  font: 500 0.7vmax "Roboto";
-  border-radius: 20px;
+  background-color: rgb(24, 23, 23);
+  color: #998d79;
+  font: 500 0.9vmax "Raleway";
+  transition: all 0.4s;
   padding: 0.5vmax 2vmax;
-  margin: 1vmax;
+  margin: 0.5vmax;
   outline: none;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.219);
 }
 
-.detailsBlock-3-1 > button:last-child:hover {
-  background-color: rgb(197, 68, 45);
+.detailsBlock-3-1 > button:hover {
+  background-color: rgb(68, 67, 67);
 }
 
 .detailsBlock-3 > p {
@@ -109,40 +116,40 @@
   border-bottom: 1px solid rgba(0, 0, 0, 0.205);
   padding: 1vmax 0;
   color: rgba(0, 0, 0, 0.651);
-  font: 400 1vmax "Roboto";
+  font: 400 1vmax "Raleway";
   margin: 1vmax 0;
 }
 
 .detailsBlock-4 {
   color: rgba(0, 0, 0, 0.897);
-  font: 500 1.2vmax sans-serif;
+  font: 500 1.2vmax "Raleway";
 }
 
 .detailsBlock-4 > p {
   color: rgba(0, 0, 0, 0.534);
-  font: 300 0.8vmax sans-serif;
+  font: 300 0.8vmax "Raleway";
 }
 
 .submitReview {
   border: none;
-  background-color: rgb(161, 105, 91);
-  font: 500 0.7vmax "Roboto";
-  border-radius: 20px;
-  padding: 0.6vmax 2vmax;
-  margin: 1vmax 0;
-  color: white;
   cursor: pointer;
-  transition: all 0.5s;
+  background-color: rgb(24, 23, 23);
+  color: #998d79;
+  font: 500 0.9vmax "Raleway";
+  padding: 0.8vmax 2vmax;
+  margin: 1vmax 0;
+  transition: all 0.4s;
   outline: none;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.219);
 }
+
 .submitReview:hover {
-  background-color: rgb(197, 68, 45);
-  transform: scale(1.1);
+  background-color: rgb(68, 67, 67);
 }
 
 .reviewsHeading {
   color: #000000be;
-  font: 500 1.4vmax "Roboto";
+  font: 500 1.4vmax "Raleway";
   text-align: center;
   border-bottom: 1px solid rgba(0, 0, 0, 0.226);
   padding: 1vmax;
@@ -158,7 +165,6 @@
 
 .reviewCard {
   flex: none;
-
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.226);
   border: 1px solid rgba(56, 56, 56, 0.116);
   width: 30vmax;
@@ -168,21 +174,23 @@
   margin: 1vmax;
   padding: 3vmax;
 }
+
 .reviewCard > img {
   width: 5vmax;
 }
 
 .reviewCard > p {
   color: rgba(0, 0, 0, 0.836);
-  font: 600 0.9vmax "Roboto";
+  font: 600 0.9vmax "Raleway";
 }
+
 .reviewCardComment {
   color: rgba(0, 0, 0, 0.445);
-  font: 300 0.8vmax cursive;
+  font: 300 0.8vmax "Raleway";
 }
 
 .noReviews {
-  font: 400 1.3vmax "Gill Sans";
+  font: 400 1.3vmax "Raleway";
   text-align: center;
   color: rgba(0, 0, 0, 0.548);
 }
@@ -214,7 +222,7 @@
   }
 
   .detailsBlock-3 > h1 {
-    font: 700 3vmax "Franklin Gothic Medium";
+    font: 700 3vmax "Raleway";
     text-align: center;
   }
 
@@ -233,11 +241,11 @@
   .detailsBlock-3-1-1 > input {
     padding: 1.5vmax;
     width: 3vmax;
-    font: 400 1.8vmax "Roboto";
+    font: 400 1.8vmax "Raleway";
   }
 
   .detailsBlock-3-1 > button:last-child {
-    font: 500 1.7vmax "Roboto";
+    font: 500 1.7vmax "Raleway";
     padding: 1.5vmax;
     width: 20vmax;
     margin: 3vmax 0;
@@ -246,19 +254,19 @@
   .detailsBlock-3 > p {
     padding: 2.5vmax 0;
     text-align: center;
-    font: 400 2vmax "Roboto";
+    font: 400 2vmax "Raleway";
   }
 
   .detailsBlock-4 {
-    font: 500 2.5vmax sans-serif;
+    font: 500 2.5vmax "Raleway";
   }
 
   .detailsBlock-4 > p {
-    font: 300 1.8vmax sans-serif;
+    font: 300 1.8vmax "Raleway";
   }
 
   .submitReview {
-    font: 500 1.7vmax "Roboto";
+    font: 500 1.7vmax "Raleway";
     padding: 1.5vmax;
     width: 20vmax;
     margin: 3vmax 0;

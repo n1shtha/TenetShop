@@ -6,17 +6,20 @@ const ReviewCard = ({ review }) => {
   const options = {
     edit: false,
     color: "rgba(20,20,20,0.1)",
-    activeColor: "gold",
+    activeColor: "#cbbc9a",
     size: window.innerWidth < 600 ? 15 : 20,
     value: review?.rating,
     isHalf: true,
   };
+
   return (
     <div className="reviewCard">
       <img src={profilePng} alt="User" />
       <p>{review.name}</p>
       <ReactStars {...options} />
-      <span>{review.comment}</span>
+      <p>
+        <span>{review.comment}</span>
+      </p>
     </div>
   );
 };

@@ -21,11 +21,38 @@ a.brand {
   display: flex;
 }
 
+a.brand:hover {
+  color: #202020;
+}
+
 a.category {
   color: #1f1e1e;
   font-size: 1rem;
   font-family: "Raleway", sans-serif;
   margin-inline: 20px;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #817979;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+a:visited {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: none;
+}
+a:focus {
+  text-decoration: none;
+}
+a:hover,
+a:active {
+  text-decoration: none;
 }
 
 .search {

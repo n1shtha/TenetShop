@@ -10,7 +10,8 @@
 
 .products {
   display: flex;
-  margin-top: 9vmax;
+  margin-top: 2vmax;
+  margin-left: 2vmax;
   flex-wrap: wrap;
   padding: 0 10vmax;
   justify-content: center;
@@ -28,6 +29,7 @@
   justify-content: center;
   padding: 0;
 }
+
 .page-item {
   background-color: rgb(255, 255, 255);
   list-style: none;
@@ -64,6 +66,7 @@
   top: 10vmax;
   left: 4vmax;
 }
+
 .categoryBox {
   padding: 0%;
 }
@@ -76,9 +79,11 @@
   cursor: pointer;
   transition: all 0.5s;
 }
+
 .category-link:hover {
   color: tomato;
 }
+
 .filterBox > fieldset {
   border: 1px solid rgba(0, 0, 0, 0.329);
 }

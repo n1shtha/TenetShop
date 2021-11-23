@@ -15,7 +15,7 @@ body {
 
 .banner > h1 {
   margin: 5vmax;
-  font: 600 2.5vmax "Raleway";
+  font: 400 2.5vmax "Bodoni Moda";
 }
 
 .banner > p {
@@ -42,6 +42,7 @@ body {
 }
 
 .productCard {
+  padding-top: 2vmax;
   width: 14vmax;
   display: flex;
   flex-direction: column;
@@ -49,12 +50,12 @@ body {
   color: rgb(48, 48, 48);
   margin: 2vmax;
   transition: all 0.4s;
-  padding-bottom: 0.5vmax;
+  padding-bottom: 2vmax;
 }
 
 .productCard > img {
   width: 14vmax;
-  height: 16vmax;
+  height: 14vmax;
   object-fit: contain;
 }
 
