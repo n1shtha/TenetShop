@@ -20,10 +20,10 @@ const Search = ({ history }) => {
       <form className="searchBox" onSubmit={searchSubmitHandler}>
         <input
           type="text"
-          placeholder="Search a Product ..."
+          placeholder="Search for a product..."
           onChange={(e) => setKeyword(e.target.value)}
         />
-        <input type="submit" value="Search" />
+        <input type="submit" value="SEARCH" />
       </form>
     </Fragment>
   );

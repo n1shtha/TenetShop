@@ -10,15 +10,7 @@ import Slider from "@material-ui/core/Slider";
 import Typography from "@material-ui/core/Typography";
 import MetaData from "../layout/MetaData";
 
-const categories = [
-  "Watch",
-  "Footwear",
-  "Bottom",
-  "Tops",
-  "Attire",
-  "Camera",
-  "SmartPhones",
-];
+const categories = ["Watch", "Bracelet", "Strap", "Ring"];
 
 const Products = ({ match }) => {
   const dispatch = useDispatch();
@@ -56,8 +48,8 @@ const Products = ({ match }) => {
         <Loader />
       ) : (
         <Fragment>
-          <MetaData title="PRODUCTS -- ECOMMERCE" />
-          <h2 className="productsHeading">Products</h2>
+          <MetaData title="PRODUCTS -- Tenet" />
+          <h2 className="productsHeading">PRODUCTS</h2>
           <div className="products">
             {products &&
               products.map((product) => (
@@ -110,10 +102,10 @@ const Products = ({ match }) => {
                 itemsCountPerPage={resultPerPage}
                 totalItemsCount={productsCount}
                 onChange={setCurrentPageNo}
-                nextPageText="Next"
-                prevPageText="Prev"
-                firstPageText="1st"
-                lastPageText="Last"
+                nextPageText="NEXT"
+                prevPageText="PREV"
+                firstPageText="FIRST"
+                lastPageText="LAST"
                 itemClass="page-item"
                 linkClass="page-link"
                 activeClass="pageItemActive"
