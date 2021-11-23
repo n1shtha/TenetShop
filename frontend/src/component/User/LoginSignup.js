@@ -180,7 +180,7 @@ const LoginSignup = ({ history }) => {
                   <input
                     type="file"
                     name="avatar"
-                    accept="image/"
+                    accept="image/*"
                     onChange={registerDataChange}
                   />
                 </div>
