@@ -10,23 +10,22 @@ import store from "./store";
 import Search from "./component/Product/Search.js";
 import Products from "./component/Product/Products";
 import { loadUser } from "./actions/userAction";
-import UserOptions from "./component/layout/Header/UserOptions.js"
+import UserOptions from "./component/layout/Header/UserOptions.js";
 import { useSelector } from "react-redux";
 import { useEffect } from "react";
 import Profile from "./component/User/Profile";
 import ProtectedRoute from "./component/Route/ProtectedRoute";
-import UpdateProfile from "./component/User/UpdateProfile.js"
-function App() {
+import UpdateProfile from "./component/User/UpdateProfile.js";
+import UpdatePassword from "./component/User/UpdatePassword.js";
+import ForgotPassword from "./component/User/ForgotPassword.js";
+import ResetPassword from "./component/User/ResetPassword.js";
 
+function App() {
   const { isAuthenticated, user } = useSelector((state) => state.user);
 
   useEffect(() => {
-    
-
     store.dispatch(loadUser());
-
   }, []);
-
 
   return (
     <Router>
@@ -40,6 +39,13 @@ function App() {
       <Route exact path="/search" component={Search} />
       <ProtectedRoute exact path="/account" component={Profile} />
       <ProtectedRoute exact path="/me/update" component={UpdateProfile} />
+      <ProtectedRoute
+        exact
+        path="/password/update"
+        component={UpdatePassword}
+      />
+      <Route exact path="/password/forgot" component={ForgotPassword} />
+      <Route exact path="/password/reset/:token" component={ResetPassword} />
       <Route path="/login" component={LoginSignup} />
       <Footer />
     </Router>
