@@ -101,11 +101,11 @@ exports.createProductReview = catchAsyncError(async (req, res, next) => {
   };
   const product = await Product.findById(productId);
   const isReviewed = product.reviews.find(
-    (rev) => rev.user.toString() == req.user._id.toString()
+    (rev) => rev.user.toString() === req.user._id.toString()
   );
   if (isReviewed) {
     product.reviews.forEach((rev) => {
-      if (rev.user.toString() == req.user._id.toString())
+      if (rev.user.toString() === req.user._id.toString())
         (rev.rating = rating), (rev.comment = comment);
     });
   } else {
@@ -118,7 +118,7 @@ exports.createProductReview = catchAsyncError(async (req, res, next) => {
     avg += rev.rating;
   });
 
-  product.rating = avg / product.reviews.length;
+  product.Rating = avg / product.reviews.length;
 
   await product.save({ validateBeforeSave: false });
   res.status(200).json({
@@ -154,14 +154,18 @@ exports.deleteReview = catchAsyncError(async (req, res, next) => {
     avg += rev.rating;
   });
 
-  const rating = avg / reviews.length;
-
+  let Rating = 0;
+  if (reviews.length === 0) {
+    Rating =0;
+  } else {
+    Rating = avg / reviews.length;
+  }
   const numOfReviews = reviews.length;
   await Product.findByIdAndUpdate(
     req.query.productId,
     {
       reviews,
-      rating,
+      Rating,
       numOfReviews,
     },
     {

@@ -5,7 +5,7 @@ const Header = () => {
   return (
     <header id="header">
       <div>
-        <a href className="brand">
+        <a href="\" className="brand">
           TENET
         </a>
       </div>
