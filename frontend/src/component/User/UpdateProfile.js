@@ -42,7 +42,9 @@ const UpdateProfile = ({ history }) => {
         setAvatar(reader.result);
       }
     };
-    reader.readAsDataURL(e.target.files);
+    if (e.target.files[0]) {
+      reader.readAsDataURL(e.target.files[0]);
+    }
   };
 
   useEffect(() => {
