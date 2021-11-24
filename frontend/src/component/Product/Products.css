@@ -2,16 +2,15 @@
   margin: 2vmax auto;
   width: 15vw;
   border-bottom: 1px solid rgba(0, 0, 0, 0.171);
-  padding: 2vmax;
+  padding: 1vmax;
   color: rgba(0, 0, 0, 0.678);
-  font: 500 1.5vmax "Roboto";
+  font: 500 1.5vmax "Raleway";
   text-align: center;
 }
 
 .products {
   display: flex;
-  margin-top: 2vmax;
-  margin-left: 2vmax;
+  margin: 2vmax;
   flex-wrap: wrap;
   padding: 0 10vmax;
   justify-content: center;
@@ -41,19 +40,21 @@
 
 .page-link {
   text-decoration: none;
-  font: 300 0.9vmax "Roboto";
+  font: 300 0.9vmax "Raleway";
   color: rgb(80, 80, 80);
   transition: all 0.3s;
 }
 
 .page-item:hover {
-  background-color: rgb(236, 197, 112);
+  background-color: rgb(245, 244, 244);
 }
+
 .page-item:hover .page-link {
-  background-color: rgb(236, 197, 112);
+  color: rgb(0, 0, 0);
 }
+
 .pageItemActive {
-  background-color: rgb(240, 154, 42);
+  background-color: rgb(196, 181, 178);
 }
 
 .pageLinkActive {
@@ -74,14 +75,14 @@
 .category-link {
   list-style: none;
   color: rgba(0, 0, 0, 0.61);
-  font: 400 0.8vmax "Roboto";
+  font: 400 0.8vmax "Raleway";
   margin: 0.4vmax;
   cursor: pointer;
   transition: all 0.5s;
 }
 
 .category-link:hover {
-  color: tomato;
+  color: rgb(126, 110, 107);
 }
 
 .filterBox > fieldset {

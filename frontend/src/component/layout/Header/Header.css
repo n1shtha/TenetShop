@@ -84,3 +84,15 @@ a:active {
   cursor: pointer;
   font-size: 20px;
 }
+
+.speedDial {
+  position: fixed;
+  right: 3vmax;
+  top: 2vmax;
+}
+
+.speedDialIcon {
+  width: 56px;
+  height: 56px;
+  border-radius: 100%;
+}
