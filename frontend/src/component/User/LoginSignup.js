@@ -8,6 +8,7 @@ import PersonOutlineIcon from "@material-ui/icons/PersonOutline";
 import { useDispatch, useSelector } from "react-redux";
 import { clearErrors, login, register } from "../../actions/userAction";
 import { useAlert } from "react-alert";
+import Profile from "../../images/Profile.png";
 
 const LoginSignup = ({ history }) => {
   const dispatch = useDispatch();
@@ -26,12 +27,11 @@ const LoginSignup = ({ history }) => {
 
   const [user, setUser] = useState({ name: "", email: "", password: "" });
   const { name, email, password } = user;
-  const [avatar, setAvatar] = useState();
-  const [avatarPreview, setAvatarPreview] = useState("/Profile.png");
+  const [avatar, setAvatar] = useState(Profile);
+  const [avatarPreview, setAvatarPreview] = useState(Profile);
 
   const loginSubmit = (e) => {
     e.preventDefault();
-
     dispatch(login(loginEmail, loginPassword));
   };
 
