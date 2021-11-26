@@ -1,5 +1,5 @@
 import React, { Fragment, useEffect, useState } from "react";
-import Carousel from "react-material-ui-carousel";
+//import Carousel from "react-material-ui-carousel";
 import "./ProductDetails.css";
 import { useSelector, useDispatch } from "react-redux";
 import { clearErrors, getProductDetails } from "../../actions/productAction";
@@ -62,20 +62,20 @@ const ProductDetails = ({ match }) => {
         <Loader />
       ) : (
         <Fragment>
-          <MetaData title={`${product.name} -- ECOMMERCE`} />
+          <MetaData title={`${product?.name} -- Tenet`} />
           <div className="ProductDetails">
             <div>
-              <Carousel>
-                {product?.images &&
-                  product?.images.map((item, i) => (
+              
+                  {product?.images &&
+                  product?.images.map((item, i) => (  
                     <img
                       className="CarouselImage"
-                      key={i}
+                      key={item.url}
                       src={item.url}
                       alt={`${i} Slide`}
                     />
                   ))}
-              </Carousel>
+              
             </div>
             <div>
               <div className="detailsBlock-1">
@@ -116,7 +116,7 @@ const ProductDetails = ({ match }) => {
           </div>
 
           <h3 className="reviewsHeading">REVIEWS</h3>
-          {product.reviews && product.reviews[0] ? (
+          {product?.reviews && product.reviews[0] ? (
             <div className="reviews">
               {product.reviews &&
                 product.reviews.map((review) => (
