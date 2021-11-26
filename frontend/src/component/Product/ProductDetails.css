@@ -137,7 +137,7 @@
   border: none;
   cursor: pointer;
   background-color: rgb(24, 23, 23);
-  color: #998d79;
+  color: #fabb4d;
   font: 500 0.9vmax "Raleway";
   padding: 0.8vmax 2vmax;
   margin: 1vmax 0;
@@ -168,7 +168,7 @@
 
 .reviewCard {
   flex: none;
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.226);
+  box-shadow: 0 0 5px rgba(126, 74, 74, 0.226);
   border: 1px solid rgba(56, 56, 56, 0.116);
   width: 30vmax;
   display: flex;
