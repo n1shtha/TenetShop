@@ -27,14 +27,14 @@ const Header = () => {
         <a className="search-btn" href="\search">
           <i className="fa fa-search" aria-hidden="true"></i>
         </a>
-        <a className="user-btn" href="\login">
-          <i className="fa fa-user" aria-hidden="true"></i>
+        <a className="cart-btn" href="\wishlist">
+          <i className="fa fa-heart" aria-hidden="true"></i>
         </a>
         <a className="cart-btn" href="\cart">
           <i className="fa fa-shopping-cart" aria-hidden="true"></i>
         </a>
-        <a className="cart-btn" href="\wishlist">
-          <i className="fa fa-heart" aria-hidden="true"></i>
+        <a className="user-btn" href="\login">
+          <i className="fa fa-user" aria-hidden="true"></i>
         </a>
       </div>
     </header>

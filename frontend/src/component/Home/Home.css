@@ -4,7 +4,7 @@ body {
 }
 
 .banner {
-  margin-top: 10px;
+ 
   background-image: url("../../../src/images/banner7.jpg");
   height: 660px;
   display: flex;
@@ -14,7 +14,6 @@ body {
   justify-content: center;
   color: black;
 }
-
 .banner > h1 {
   margin: 5vmax;
   font: 400 2.5vmax "Bodoni Moda";
