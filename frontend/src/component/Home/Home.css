@@ -1,10 +1,12 @@
 body {
   margin: 0px;
+  
 }
 
 .banner {
-  background-image: url("../../../src/images/banner1.jpg");
-  height: 100vmin;
+  margin-top: 10px;
+  background-image: url("../../../src/images/banner3.jpg");
+  height: 660px;
   display: flex;
   flex-direction: column;
   text-align: center;
@@ -19,7 +21,7 @@ body {
 }
 
 .banner > p {
-  font: 300 1.4vmax "Raleway";
+  font: 300 1.7vmax "Raleway";
 }
 
 .homeHeading {
