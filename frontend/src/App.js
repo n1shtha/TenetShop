@@ -19,11 +19,12 @@ import UpdatePassword from "./component/User/UpdatePassword";
 import ForgotPassword from "./component/User/ForgotPassword";
 import ResetPassword from "./component/User/ResetPassword";
 import Cart from "./component/Cart/Cart";
+import Wishlist from "./component/Cart/Wishlist";
 import Shipping from "./component/Cart/Shipping";
 import ConfirmOrder from "./component/Cart/ConfirmOrder";
 import axios from "axios";
 import Payment from "./component/Cart/Payment";
-import { Elements} from "@stripe/react-stripe-js";
+import { Elements } from "@stripe/react-stripe-js";
 import { loadStripe } from "@stripe/stripe-js";
 import OrderSuccess from "./component/Cart/OrderSuccess";
 function App() {
@@ -63,15 +64,16 @@ function App() {
       <Route exact path="/password/reset/:token" component={ResetPassword} />
       <Route path="/login" component={LoginSignup} />
       <Route path="/cart" component={Cart} />
-      <ProtectedRoute exact path="/shipping" component={Shipping}/>
-      <ProtectedRoute exact path="/order/confirm" component={ConfirmOrder}/>
+      <Route path="/wishlist" component={Wishlist} />
+      <ProtectedRoute exact path="/shipping" component={Shipping} />
+      <ProtectedRoute exact path="/order/confirm" component={ConfirmOrder} />
 
       {stripeApiKey && (
         <Elements stripe={loadStripe(stripeApiKey)}>
           <ProtectedRoute exact path="/process/payment" component={Payment} />
         </Elements>
       )}
-      <ProtectedRoute exact path="/success" component={OrderSuccess}/>
+      <ProtectedRoute exact path="/success" component={OrderSuccess} />
       <Footer />
     </Router>
   );

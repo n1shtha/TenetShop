@@ -8,7 +8,8 @@ import ReactStars from "react-rating-stars-component";
 import ReviewCard from "./ReviewCard.js";
 import Loader from "../layout/Loader/Loader";
 import MetaData from "../layout/MetaData";
-import {addItemsToCart} from "../../actions/cartAction";
+import { addItemsToCart } from "../../actions/cartAction";
+import { addItemsToList } from "../../actions/listAction";
 
 const ProductDetails = ({ match }) => {
   const dispatch = useDispatch();
@@ -26,17 +27,17 @@ const ProductDetails = ({ match }) => {
     value: product?.rating,
     isHalf: true,
   };
-  
+
   const [quantity, setQuantity] = useState(1);
 
   const increaseQuantity = () => {
-    if(product.stock <= quantity) return;
+    if (product.stock <= quantity) return;
     const qty = quantity + 1;
     setQuantity(qty);
   };
 
   const decreaseQuantity = () => {
-    if(quantity <= 1) return;
+    if (quantity <= 1) return;
     const qty = quantity - 1;
     setQuantity(qty);
   };
@@ -44,6 +45,11 @@ const ProductDetails = ({ match }) => {
   const addToCartHandler = () => {
     dispatch(addItemsToCart(match.params.id, quantity));
     alert.success("Item Added To Cart");
+  };
+
+  const addToListHandler = () => {
+    dispatch(addItemsToList(match.params.id, quantity));
+    alert.success("Item Added To Wishlist");
   };
 
   useEffect(() => {
@@ -65,17 +71,15 @@ const ProductDetails = ({ match }) => {
           <MetaData title={`${product?.name} -- Tenet`} />
           <div className="ProductDetails">
             <div>
-              
-                  {product?.images &&
-                  product?.images.map((item, i) => (  
-                    <img
-                      className="CarouselImage"
-                      key={item.url}
-                      src={item.url}
-                      alt={`${i} Slide`}
-                    />
-                  ))}
-              
+              {product?.images &&
+                product?.images.map((item, i) => (
+                  <img
+                    className="CarouselImage"
+                    key={item.url}
+                    src={item.url}
+                    alt={`${i} Slide`}
+                  />
+                ))}
             </div>
             <div>
               <div className="detailsBlock-1">
@@ -97,7 +101,7 @@ const ProductDetails = ({ match }) => {
                     <button onClick={increaseQuantity}>+</button>
                   </div>
                   <button onClick={addToCartHandler}>ADD TO CART</button>
-                  <button>ADD TO WISHLIST</button>
+                  <button onClick={addToListHandler}>ADD TO WISHLIST</button>
                 </div>
                 <p>
                   Status:
