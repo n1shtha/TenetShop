@@ -10,6 +10,7 @@ header {
 
 header i {
   margin-inline: 20px;
+  
   display: flex;
 }
 
@@ -86,9 +87,9 @@ a:active {
 }
 
 .speedDial {
-  position: fixed;
-  right: 3vmax;
-  top: 2vmax;
+  position: absolute;
+  right: 1vmax;
+  top: 1vmax;
 }
 
 .speedDialIcon {
