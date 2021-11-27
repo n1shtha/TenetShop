@@ -98,10 +98,12 @@
 
 .detailsBlock-3-1 > button {
   width: 35%;
+  display: flex;
+  justify-content: center;
   border: none;
   cursor: pointer;
   background-color: rgb(24, 23, 23);
-  color: #998d79;
+  color: #fabb4d;
   font: 500 0.9vmax "Raleway";
   transition: all 0.4s;
   padding: 0.5vmax 2vmax;
@@ -109,6 +111,7 @@
   outline: none;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.219);
 }
+
 
 .detailsBlock-3-1 > button:hover {
   background-color: rgb(68, 67, 67);
