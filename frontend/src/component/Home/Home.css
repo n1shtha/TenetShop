@@ -1,11 +1,10 @@
 body {
   margin: 0px;
-  
 }
 
 .banner {
- 
-  background-image: url("../../../src/images/banner7.jpg");
+  background-image: url("../../../src/images/banner8.jpg");
+  background-size: cover;
   height: 660px;
   display: flex;
   flex-direction: column;
@@ -14,6 +13,7 @@ body {
   justify-content: center;
   color: black;
 }
+
 .banner > h1 {
   margin: 5vmax;
   font: 400 2.5vmax "Bodoni Moda";
