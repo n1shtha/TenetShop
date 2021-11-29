@@ -5,7 +5,6 @@ import { useSelector, useDispatch } from "react-redux";
 import { addItemsToCart, removeItemsFromCart } from "../../actions/cartAction";
 import { addItemsToList } from "../../actions/listAction";
 import { useAlert } from "react-alert";
-import { Typography } from "@material-ui/core";
 import RemoveShoppingCartIcon from "@material-ui/icons/RemoveShoppingCart";
 import { Link } from "react-router-dom";
 
@@ -51,9 +50,8 @@ const Cart = ({ history }) => {
       {cartItems.length === 0 ? (
         <div className="emptyCart">
           {" "}
-          <RemoveShoppingCartIcon />{" "}
-          <Typography> No product in your cart</Typography>
-          <Link to="/products">View Products</Link>
+          <RemoveShoppingCartIcon /> <p>No products in your cart</p>
+          <Link to="/products">VIEW PRODUCTS</Link>
         </div>
       ) : (
         <Fragment>
@@ -108,9 +106,8 @@ const Cart = ({ history }) => {
                   0
                 )}`}</p>
               </div>
-              <div></div>
-              <div className="checkOutBtn">
-                <button onClick={checkoutHandler}>Check Out</button>
+              <div className="checkOutButton">
+                <button onClick={checkoutHandler}>CHECK OUT</button>
               </div>
             </div>
           </div>

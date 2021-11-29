@@ -9,10 +9,12 @@ const CartItemCard = ({ item, deleteCartItems, addToWishlist }) => {
       <div>
         <Link to={`/product/${item.product}`}>{item.name}</Link>
         <span>{`Price: ₹${item.price}`}</span>
-        <p onClick={() => deleteCartItems(item.product)}>Remove</p>
-        <p onClick={() => addToWishlist(item.product, item.quantity)}>
-          Add to wishlist
-        </p>
+        <span>
+          <p onClick={() => deleteCartItems(item.product)}>Remove</p>
+          <p onClick={() => addToWishlist(item.product, item.quantity)}>
+            Add to wishlist
+          </p>
+        </span>
       </div>
     </div>
   );

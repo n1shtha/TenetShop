@@ -5,6 +5,7 @@
   align-items: flex-start;
   box-sizing: border-box;
 }
+
 .ListItemCard > img {
   width: 5vmax;
 }
@@ -14,22 +15,25 @@
   margin: 0.3vmax 1vmax;
   flex-direction: column;
 }
+
 .ListItemCard > div > a {
-  font: 300 0.9vmax cursive;
+  font: 300 1.2vmax "Bodoni Moda";
   color: rgba(24, 24, 24, 0.815);
   text-decoration: none;
 }
 
 .ListItemCard > div > span {
-  font: 300 0.9vmax "Roboto";
+  font: 300 0.9vmax "Raleway";
   color: rgba(24, 24, 24, 0.815);
 }
 
 .ListItemCard > div > p {
-  color: tomato;
-  font: 100 0.8vmax "Roboto";
+  color: rgb(29, 28, 28);
+  text-decoration: underline;
+  font: 100 0.8vmax "Raleway";
   cursor: pointer;
 }
+
 @media screen and (max-width: 600px) {
   .ListItemCard {
     padding: 3vmax;
@@ -44,14 +48,14 @@
   }
 
   .ListItemCard > div > a {
-    font: 300 2vmax cursive;
+    font: 300 2vmax "Bodoni Moda";
   }
 
   .ListItemCard > div > span {
-    font: 300 1.9vmax "Roboto";
+    font: 300 1.9vmax "Raleway";
   }
 
   .ListItemCard > div > p {
-    font: 100 1.8vmax "Roboto";
+    font: 100 1.8vmax "Raleway";
   }
 }

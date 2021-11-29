@@ -3,8 +3,6 @@ import "./Wishlist.css";
 import ListItemCard from "./ListItemCard";
 import { useSelector, useDispatch } from "react-redux";
 import { addItemsToList, removeItemsFromList } from "../../actions/listAction";
-import { Typography } from "@material-ui/core";
-import RemoveShoppingCartIcon from "@material-ui/icons/RemoveShoppingCart";
 import { Link } from "react-router-dom";
 
 const Wishlist = () => {
@@ -37,9 +35,9 @@ const Wishlist = () => {
       {listItems.length === 0 ? (
         <div className="emptyList">
           {" "}
-          <RemoveShoppingCartIcon />{" "}
-          <Typography> No products in your wishlist</Typography>
-          <Link to="/products">View Products</Link>
+          <i className="fas fa-heart-broken fa-3x" aria-hidden="true"></i>{" "}
+          <p> No products in your wishlist</p>
+          <Link to="/products">VIEW PRODUCTS</Link>
         </div>
       ) : (
         <Fragment>
