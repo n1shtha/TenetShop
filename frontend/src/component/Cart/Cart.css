@@ -30,7 +30,7 @@
   }
   
   .cartHeader {
-    background-color: tomato;
+    background-color: black;
     width: 90%;
     box-sizing: border-box;
     margin: auto;
@@ -96,7 +96,7 @@
   }
   
   .cartGrossProfitBox {
-    border-top: 3px solid tomato;
+    border-top: 3px solid black;
     margin: 1vmax 4vmax;
   box-sizing: border-box;
   padding: 2vmax 0;
@@ -104,12 +104,14 @@
   display: flex;
   justify-content: space-between;
   }
+  
   .checkOutBtn {
     display: flex;
     justify-content: flex-end;
   }
+
   .checkOutBtn > button {
-    background-color: tomato;
+    background-color: black;
     color: white;
     border: none;
     padding: 0.8vmax 4vmax;
@@ -119,6 +121,8 @@
     cursor: pointer;
     border-radius: 30px;
   }
+  
+  
  
   @media screen and (max-width: 600px) {
     .cartPage {

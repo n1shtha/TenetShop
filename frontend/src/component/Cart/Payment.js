@@ -92,6 +92,7 @@ const Payment = ({ history }) =>{
                     id: result.paymentIntent.id,
                     status: result.paymentIntent.status,
                   };
+ 
         
                   dispatch(createOrder(order));
         
