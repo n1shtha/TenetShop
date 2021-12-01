@@ -80,6 +80,14 @@ body {
   margin-bottom: 0;
 }
 
+.productCard > p:last-of-type {
+  font-family: "Bodoni Moda", sans-serif;
+  color: rgba(54, 54, 54, 0.582);
+  font-size: 0.8vmax;
+  margin: 0.5vmax 0.5vmax;
+  margin-bottom: 0;
+}
+
 .productCard > span {
   margin: 0.5vmax;
   color: rgb(48, 48, 48);

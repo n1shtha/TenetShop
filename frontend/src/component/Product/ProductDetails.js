@@ -84,7 +84,8 @@ const ProductDetails = ({ match }) => {
             <div>
               <div className="detailsBlock-1">
                 <h2>{product?.name}</h2>
-                <p>Product # {product?._id}</p>
+                <p>{product?.brand}</p>
+                <p>Product #{product?._id}</p>
               </div>
 
               <div className="detailsBlock-2">
