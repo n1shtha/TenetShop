@@ -3,13 +3,13 @@ import "./Wishlist.css";
 import ListItemCard from "./ListItemCard";
 import { useSelector, useDispatch } from "react-redux";
 import { addItemsToList, removeItemsFromList } from "../../actions/listAction";
-import { Typography } from "@material-ui/core";
-import RemoveShoppingCartIcon from "@material-ui/icons/RemoveShoppingCart";
 import { Link } from "react-router-dom";
 
-const Wishlist = ({ history }) => {
+const Wishlist = () => {
   const dispatch = useDispatch();
+
   const { listItems } = useSelector((state) => state.list);
+
   const increaseQuantity = (id, quantity, stock) => {
     const newQty = quantity + 1;
     if (stock <= quantity) {
@@ -30,18 +30,14 @@ const Wishlist = ({ history }) => {
     dispatch(removeItemsFromList(id));
   };
 
-  const checkoutHandler = () => {
-    history.push("/login?redirect=shipping");
-  };
-
   return (
     <Fragment>
       {listItems.length === 0 ? (
         <div className="emptyList">
           {" "}
-          <RemoveShoppingCartIcon />{" "}
-          <Typography> No products in your wishlist</Typography>
-          <Link to="/products">View Products</Link>
+          <i className="fas fa-heart-broken fa-3x" aria-hidden="true"></i>{" "}
+          <p> No products in your wishlist</p>
+          <Link to="/products">VIEW PRODUCTS</Link>
         </div>
       ) : (
         <Fragment>
@@ -82,21 +78,6 @@ const Wishlist = ({ history }) => {
                   }`}</p>
                 </div>
               ))}
-
-            <div className="listGrossProfit">
-              <div></div>
-              <div className="listGrossProfitBox">
-                <p>Gross Total</p>
-                <p>{`₹${listItems.reduce(
-                  (acc, item) => acc + item.quantity * item.price,
-                  0
-                )}`}</p>
-              </div>
-              <div></div>
-              <div className="checkOutBtn">
-                <button onClick={checkoutHandler}>Check Out</button>
-              </div>
-            </div>
           </div>
         </Fragment>
       )}

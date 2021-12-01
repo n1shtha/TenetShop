@@ -8,20 +8,22 @@
   justify-content: center;
   align-items: center;
 }
-.emptyList > svg {
-  font-size: 5vmax;
-  color: tomato;
+
+.fa-heart-broken {
+  color: #a77066;
 }
+
 .emptyList > p {
   font-size: 2vmax;
+  font-family: "Bodoni Moda", sans-serif;
 }
 .emptyList > a {
-  background-color: rgb(51, 51, 51);
-  color: white;
+  background-color: rgb(24, 23, 23);
+  color: #998d79;
   border: none;
   padding: 1vmax 3vmax;
   cursor: pointer;
-  font: 400 1vmax "Roboto";
+  font: 400 1vmax "Raleway";
   text-decoration: none;
 }
 
@@ -30,21 +32,24 @@
 }
 
 .listHeader {
-  background-color: tomato;
+  background-color: #a77066;
   width: 90%;
   box-sizing: border-box;
   margin: auto;
   color: white;
   display: grid;
   grid-template-columns: 4fr 1fr 1fr;
-  font: 300 0.7vmax "Roboto";
+  font: 300 1vmax "Raleway";
 }
+
 .listHeader > p {
   margin: 10px;
 }
+
 .listHeader > p:last-child {
   text-align: end;
 }
+
 .listContainer {
   width: 90%;
   margin: auto;
@@ -57,14 +62,16 @@
   align-items: center;
   height: 8vmax;
 }
+
 .listInput > button {
   border: none;
   background-color: rgba(0, 0, 0, 0.616);
-  padding: 0.5vmax;
+  padding: 0.7vmax;
   cursor: pointer;
   color: white;
   transition: all 0.5s;
 }
+
 .listInput > button:hover {
   background-color: rgba(0, 0, 0, 0.767);
 }
@@ -75,7 +82,7 @@
   width: 1vmax;
   text-align: center;
   outline: none;
-  font: 400 0.8vmax "Roboto";
+  font: 400 0.8vmax "Raleway";
   color: rgba(0, 0, 0, 0.74);
 }
 
@@ -85,7 +92,7 @@
   height: 8vmax;
   align-items: center;
   box-sizing: border-box;
-  font: 300 1vmax cursive;
+  font: 300 1vmax "Raleway";
   justify-content: flex-end;
   color: rgba(0, 0, 0, 0.753);
 }
@@ -96,28 +103,13 @@
 }
 
 .listGrossProfitBox {
-  border-top: 3px solid tomato;
+  border-top: 3px solid #1f1e1d;
   margin: 1vmax 4vmax;
   box-sizing: border-box;
   padding: 2vmax 0;
-  font: 300 1vmax "Roboto";
+  font: 300 1vmax "Raleway";
   display: flex;
   justify-content: space-between;
-}
-.checkOutBtn {
-  display: flex;
-  justify-content: flex-end;
-}
-.checkOutBtn > button {
-  background-color: tomato;
-  color: white;
-  border: none;
-  padding: 0.8vmax 4vmax;
-  width: 50%;
-  font: 300 0.8vmax "Roboto";
-  margin: 1vmax 4vmax;
-  cursor: pointer;
-  border-radius: 30px;
 }
 
 @media screen and (max-width: 600px) {
@@ -128,7 +120,7 @@
 
   .listHeader {
     width: 100%;
-    font: 300 1.7vmax "Roboto";
+    font: 300 1.7vmax "Raleway";
     grid-template-columns: 3fr 1fr 1fr;
   }
 
@@ -148,13 +140,13 @@
   .listInput > input {
     width: 2vmax;
     padding: 1.5vmax;
-    font: 400 1.8vmax "Roboto";
+    font: 400 1.8vmax "Raleway";
   }
 
   .listSubtotal {
     padding: 1.5vmax;
     height: 20vmax;
-    font: 300 2vmax "Roboto";
+    font: 300 2vmax "Raleway";
   }
 
   .listGrossProfit {
@@ -164,12 +156,12 @@
 
   .listGrossProfitBox {
     padding: 2vmax;
-    font: 300 2vmax "Roboto";
+    font: 300 2vmax "Raleway";
   }
 
   .checkOutBtn > button {
     padding: 2vmax 4vmax;
     width: 100%;
-    font: 300 2vmax "Roboto";
+    font: 300 2vmax "Raleway";
   }
 }

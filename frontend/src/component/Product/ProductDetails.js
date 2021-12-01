@@ -101,9 +101,7 @@ const ProductDetails = ({ match }) => {
                     <button onClick={increaseQuantity}>+</button>
                   </div>
                   <button onClick={addToCartHandler}>ADD TO CART</button>
-                  <button onClick={addToListHandler}> <i className="fa fa-heart fa-2x" aria-hidden="true"> </i>
-                    ADD TO WISHLIST </button>
-            
+                  <button onClick={addToListHandler}>ADD TO WISHLIST </button>
                 </div>
                 <p>
                   Status:
