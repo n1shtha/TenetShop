@@ -9,10 +9,11 @@
   align-items: center;
 }
 .orderSuccess > svg {
-  font-size: 7vmax;
+  font-size: 5vmax;
   color: rgb(155, 106, 97);
 }
 .orderSuccess > p {
+  font-family: "Bodoni Moda", sans-serif;
   font-size: 2vmax;
 }
 .orderSuccess > a {
@@ -21,7 +22,7 @@
   border: none;
   padding: 1vmax 3vmax;
   cursor: pointer;
-  font: 400 1vmax "Roboto";
+  font: 400 1vmax "Raleway";
   text-decoration: none;
   margin: 2vmax;
 }

@@ -20,8 +20,9 @@
 }
 
 .profileContainer > div:first-child > h1 {
-  color: rgba(0, 0, 0, 0.555);
-  font: 500 2.2vmax "Roboto";
+  margin-left: 150px;
+  color: rgba(0, 0, 0, 0.699);
+  font: 500 2.2vmax "Italiana";
   transform: translateX(-10vmax) translateY(-2vmax);
 }
 
@@ -38,8 +39,8 @@
 .profileContainer > div:first-child > a {
   border: none;
   background-color: #a77066;
-  font: 400 1vmax "Roboto";
-  color: white;
+  font: 400 1vmax "Raleway";
+  color: #cec5b6;
   text-decoration: none;
   padding: 0.5vmax;
   width: 30%;
@@ -49,7 +50,7 @@
 }
 
 .profileContainer > div:first-child > a:hover {
-  background-color: rgb(204, 78, 56);
+  background-color: #a88a84;
 }
 
 .profileContainer > div:last-child {
@@ -60,13 +61,13 @@
 }
 
 .profileContainer > div:last-child > div > h4 {
-  color: black;
-  font: 400 1.2vmax "Roboto";
+  color: rgba(0, 0, 0, 0.418);
+  font: 400 1.2vmax "Raleway";
 }
 
 .profileContainer > div:last-child > div > p {
-  color: rgba(0, 0, 0, 0.418);
-  font: 400 1vmax cursive;
+  color: black;
+  font: 400 1vmax "Raleway";
   margin: 0.2vmax;
 }
 
@@ -78,9 +79,9 @@
 
 .profileContainer > div:last-child > div:last-child > a {
   border: none;
-  background-color: rgb(68, 68, 68);
-  font: 400 1vmax "Roboto";
-  color: white;
+  background-color: rgb(24, 23, 23);
+  font: 400 1vmax "Raleway";
+  color: #998d79;
   text-decoration: none;
   padding: 0.5vmax;
   text-align: center;
@@ -89,7 +90,7 @@
 }
 
 .profileContainer > div:last-child > div:last-child > a:hover {
-  background-color: rgb(31, 31, 31);
+  background-color: rgba(0, 0, 0, 0.767);
 }
 
 @media screen and (max-width: 600px) {
@@ -98,12 +99,12 @@
   }
 
   .profileContainer > div:first-child > h1 {
-    font: 500 3.2vmax "Roboto";
+    font: 500 3.2vmax "Raleway";
     transform: translateY(-2vmax);
   }
 
   .profileContainer > div:first-child > a {
-    font: 400 1.7vmax "Roboto";
+    font: 400 1.7vmax "Raleway";
     padding: 1vmax;
   }
 
@@ -113,16 +114,16 @@
   }
 
   .profileContainer > div:last-child > div > h4 {
-    font: 400 2.5vmax "Roboto";
+    font: 400 2.5vmax "Raleway";
   }
 
   .profileContainer > div:last-child > div > p {
-    font: 400 2vmax cursive;
+    font: 400 2vmax "Raleway";
     margin: 0.5vmax 0;
   }
 
   .profileContainer > div:last-child > div:last-child > a {
-    font: 400 1.8vmax "Roboto";
+    font: 400 1.8vmax "Raleway";
     padding: 1vmax;
     margin: 2vmax 0;
   }
