@@ -5,6 +5,7 @@ import {
     CLEAR_ERRORS,
 } from "../constants/orderConstants";
 
+import { CART_EMPTY } from "../constants/cartConstants";
 import axios from "axios";
 
 // Create Order
@@ -20,6 +21,8 @@ export const createOrder = (order) => async (dispatch) => {
       const { data } = await axios.post("/api/v1/order/new", order, config);
   
       dispatch({ type: CREATE_ORDER_SUCCESS, payload: data });
+      dispatch({ type: CART_EMPTY });
+      localStorage.removeItem('cartItems');
     } catch (error) {
       dispatch({
         type: CREATE_ORDER_FAIL,

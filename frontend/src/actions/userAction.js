@@ -24,6 +24,8 @@ import {
   RESET_PASSWORD_FAIL,
   CLEAR_ERRORS,
 } from "../constants/userConstants";
+
+import { CART_EMPTY } from "../constants/cartConstants";
 import axios from "axios";
 
 //Login
@@ -82,6 +84,8 @@ export const logout = () => async (dispatch) => {
     await axios.get(`/api/v1/logout`);
 
     dispatch({ type: LOGOUT_SUCCESS });
+    dispatch({ type: CART_EMPTY });
+    localStorage.removeItem("cartItems");
   } catch (error) {
     dispatch({ type: LOGOUT_FAIL, payload: error.response.data.message });
   }
