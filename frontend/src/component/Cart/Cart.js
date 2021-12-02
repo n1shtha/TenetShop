@@ -47,7 +47,7 @@ const Cart = ({ history }) => {
 
   return (
     <Fragment>
-      {cartItems.length === 0 ? (
+      {cartItems.length === 0? (
         <div className="emptyCart">
           {" "}
           <RemoveShoppingCartIcon /> <p>No products in your cart</p>
