@@ -11,6 +11,7 @@ import Typography from "@material-ui/core/Typography";
 import MetaData from "../layout/MetaData";
 
 const categories = ["Watch", "Bracelet", "Strap", "Ring"];
+const brands = ["Daniel Wellington", "Fossil", "Titan", "Rolex"];
 
 const Products = ({ match }) => {
   const dispatch = useDispatch();
@@ -18,6 +19,7 @@ const Products = ({ match }) => {
   const [currentPage, setCurrentPage] = useState(1);
   const [price, setPrice] = useState([0, 25000]);
   const [category, setCategory] = useState("");
+  const [brand, setBrand] = useState("");
   const [rating, setRating] = useState(0);
 
   const { products, loading, error, productsCount, resultPerPage } =
@@ -32,14 +34,23 @@ const Products = ({ match }) => {
     setPrice(newPrice);
   };
 
-
-    useEffect(() => {
-        if(error) {
-            alert.error(error);
-            dispatch(clearErrors);
-        }
-        dispatch(getProduct(keyword, currentPage, price, category, rating));
-    }, [dispatch,keyword, currentPage, price, category, rating, alert, error]);
+  useEffect(() => {
+    if (error) {
+      alert.error(error);
+      dispatch(clearErrors);
+    }
+    dispatch(getProduct(keyword, currentPage, price, category, brand, rating));
+  }, [
+    dispatch,
+    keyword,
+    currentPage,
+    price,
+    category,
+    brand,
+    rating,
+    alert,
+    error,
+  ]);
   //let count = filteredProductsCount;
 
   return (
@@ -79,9 +90,20 @@ const Products = ({ match }) => {
                 </li>
               ))}
             </ul>
-
+            <Typography>Brands</Typography>
+            <ul className="categoryBox">
+              {brands.map((brand) => (
+                <li
+                  className="category-link"
+                  key={brand}
+                  onClick={() => setBrand(brand)}
+                >
+                  {brand}
+                </li>
+              ))}
+            </ul>
             <fieldset>
-              <Typography component="legend">rating Above</Typography>
+              <Typography component="legend">Ratings above</Typography>
               <Slider
                 value={rating}
                 onChange={(e, newRating) => {

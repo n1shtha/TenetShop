@@ -15,6 +15,7 @@ const ProductCard = ({ product }) => {
     <Link className="productCard" to={`/product/${product._id}`}>
       <img src={product.images[0]?.url} alt={product.name} />
       <p>{product.name}</p>
+      <p>{product.brand}</p>
       <div>
         <ReactStars {...options} />{" "}
         <span>({product.numOfReviews} reviews)</span>
