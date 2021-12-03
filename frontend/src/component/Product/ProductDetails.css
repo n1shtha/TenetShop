@@ -51,9 +51,8 @@
   padding: 1vmax 0;
 }
 
-.detailsBlock-2 > span {
+.detailsBlock-2-span {
   font: 300 0.8vmax "Raleway";
-  color: rgba(0, 0, 0, 0.699);
   margin-left: 0.5vmax;
 }
 
@@ -105,7 +104,7 @@
   border: none;
   cursor: pointer;
   background-color: rgb(24, 23, 23);
-  color: #998d79;
+  color: #ccaa6e;
   font: 500 0.9vmax "Raleway";
   transition: all 0.4s;
   padding: 0.5vmax 2vmax;
@@ -141,7 +140,7 @@
   border: none;
   cursor: pointer;
   background-color: #a77066;
-  color: #cec5b6;
+  color: #ecc787;
   font: 500 0.9vmax "Raleway";
   padding: 0.8vmax 2vmax;
   margin: 1vmax 0;
@@ -153,6 +152,18 @@
 .submitReview:hover {
   background-color: #a88a84;
 }
+.submitDialog {
+  display: flex;
+  flex-direction: column;
+}
+.submitDialogTextArea {
+  border: 1px solid rgba(0, 0, 0, 0.082);
+  margin: 1vmax 0;
+  outline: none;
+  padding: 1rem;
+  font: 300 1rem "Roboto";
+}
+
 
 .reviewsHeading {
   color: #000000be;
