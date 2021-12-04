@@ -4,6 +4,8 @@ import Header from "./component/layout/Header/Header.js";
 import Footer from "./component/layout/Footer/Footer.js";
 import { BrowserRouter as Router, Route } from "react-router-dom";
 import Home from "./component/Home/Home.js";
+import About from "./component/Home/About.js";
+import Contact from "./component/Home/Contact";
 import ProductDetails from "./component/Product/ProductDetails";
 import LoginSignup from "./component/User/LoginSignup.js";
 import store from "./store";
@@ -52,6 +54,8 @@ function App() {
       <Route exact path="/" component={Home} />
       <Route exact path="/product/:id" component={ProductDetails} />
       <Route exact path="/products" component={Products} />
+      <Route exact path="/about" component={About} />
+      <Route exact path="/contact" component={Contact} />
       <Route path="/products/:keyword" component={Products} />
       <Route exact path="/search" component={Search} />
       <ProtectedRoute exact path="/account" component={Profile} />

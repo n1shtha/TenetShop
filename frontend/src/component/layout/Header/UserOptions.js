@@ -2,6 +2,7 @@ import React, { Fragment, useState } from "react";
 import "./Header.css";
 import { SpeedDial, SpeedDialAction } from "@material-ui/lab";
 import Backdrop from "@material-ui/core/Backdrop";
+import HomeIcon from "@material-ui/icons/Home";
 import DashboardIcon from "@material-ui/icons/Dashboard";
 import PersonIcon from "@material-ui/icons/Person";
 import ExitToAppIcon from "@material-ui/icons/ExitToApp";
@@ -21,15 +22,16 @@ const UserOptions = ({ user }) => {
   const dispatch = useDispatch();
 
   const options = [
+    { icon: <HomeIcon />, name: "Home", func: home },
     { icon: <ListAltIcon />, name: "Orders", func: orders },
     { icon: <PersonIcon />, name: "Profile", func: account },
     {
       icon: (
         <ShoppingCartIcon
-          style={{ color: cartItems.length > 0 ? "tomato" : "unset" }}
+          style={{ color: cartItems.length > 0 ? "black" : "unset" }}
         />
       ),
-      name: `Cart(${cartItems.length})`,
+      name: `Cart (${cartItems.length})`,
       func: cart,
     },
     { icon: <ExitToAppIcon />, name: "Logout", func: logoutUser },
@@ -41,6 +43,10 @@ const UserOptions = ({ user }) => {
       name: "Dashboard",
       func: dashboard,
     });
+  }
+
+  function home() {
+    history.push("/");
   }
 
   function dashboard() {
