@@ -33,7 +33,7 @@
   font: 400 1vmax "Raleway";
   color: black;
 }
-.confirmshippingAreaBox > div > span {
+.confirmshippingAreaBox > div > p> span {
   margin: 0 1vmax;
   font: 400 1vmax "Raleway";
   color: #575757;
@@ -97,7 +97,8 @@
   justify-content: space-between;
   margin: 2vmax 0;
 }
-.orderSummary > div > div > span {
+.orderSummary > div > div > p > span { 
+  margin: 0 1vmax;
   color: rgba(0, 0, 0, 0.692);
 }
 
