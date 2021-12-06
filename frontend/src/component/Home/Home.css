@@ -46,7 +46,7 @@ body {
 
 .productCard {
   padding-top: 2vmax;
-  width: 14vmax;
+  width: 16vmax;
   display: flex;
   flex-direction: column;
   text-decoration: none;
@@ -57,8 +57,8 @@ body {
 }
 
 .productCard > img {
-  width: 14vmax;
-  height: 14vmax;
+  width: 15vmax;
+  height: 15vmax;
   object-fit: contain;
 }
 
@@ -97,6 +97,71 @@ body {
 
 .productCard:hover {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.productBadgeLowStock {
+  align-items: flex-end;
+  z-index: 1;
+  font-size: 0.8vmax;
+  font-family: "Raleway", sans-serif;
+  margin-left: 0.7vmax;
+  margin-inline: 0.7vmax;
+  margin-bottom: 1vmax;
+  padding: 0 0.7vmax;
+  width: fit-content;
+  height: 1.5vmax;
+  justify-content: center;
+  border: none;
+  cursor: pointer;
+  background-color: #f4f2e4;
+  color: #817244;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.219);
+}
+
+.productBadgeNoStock {
+  align-items: flex-end;
+  z-index: 1;
+  font-size: 0.8vmax;
+  font-family: "Raleway", sans-serif;
+  margin-left: 0.7vmax;
+  margin-bottom: 1vmax;
+  padding: 0 0.7vmax;
+  width: fit-content;
+  height: 1.5vmax;
+  justify-content: center;
+  border: none;
+  cursor: pointer;
+  background-color: #fef0ef;
+  color: #ec7474;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.219);
+}
+
+.productBadgeBest {
+  align-items: flex-end;
+  z-index: 1;
+  font-size: 0.8vmax;
+  font-family: "Raleway", sans-serif;
+  margin-left: 0.7vmax;
+  margin-bottom: 1vmax;
+  padding: 0 0.7vmax;
+  width: fit-content;
+  height: 1.5vmax;
+  justify-content: center;
+  border: none;
+  cursor: pointer;
+  background-color: #d1d5da;
+  color: #53636d;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.219);
+}
+
+.productNoBadge {
+  height: 1.5vmax;
+  margin-bottom: 1vmax;
+  font-size: 0;
+  font-family: "Raleway", sans-serif;
+  justify-content: center;
+  border: none;
+  background-color: transparent;
 }
 
 @media screen and (max-width: 600px) {

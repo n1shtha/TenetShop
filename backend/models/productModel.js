@@ -79,6 +79,10 @@ const productSchema = new mongoose.Schema({
     type: String,
     required: [true, "Please enter Product Brand"],
   },
+  counter: {
+    type: Number,
+    default: 0,
+  },
 });
 
 module.exports = mongoose.model("Product", productSchema);
