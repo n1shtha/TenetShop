@@ -30,6 +30,7 @@ const Products = ({ match }) => {
   const setCurrentPageNo = (e) => {
     setCurrentPage(e);
   };
+
   const priceHandler = (event, newPrice) => {
     setPrice(newPrice);
   };
@@ -59,7 +60,7 @@ const Products = ({ match }) => {
         <Loader />
       ) : (
         <Fragment>
-          <MetaData title="PRODUCTS -- Tenet" />
+          <MetaData title="All products" />
           <h2 className="productsHeading">PRODUCTS</h2>
           <div className="products">
             {products &&

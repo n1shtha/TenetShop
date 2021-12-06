@@ -26,17 +26,20 @@
 
 .confirmshippingAreaBox > div {
   margin: 1vmax 0;
-  display: flex;
+  display:flex;
+  align-items:center;
+  font-weight: 500;
 }
 
 .confirmshippingAreaBox > div > p {
   font: 400 1vmax "Raleway";
   color: black;
+  font-weight: 600;
 }
 .confirmshippingAreaBox > div > p> span {
   margin: 0 1vmax;
   font: 400 1vmax "Raleway";
-  color: #575757;
+  color: #252424;
 }
 
 .confirmCartItems > p {

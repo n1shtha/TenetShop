@@ -2,8 +2,10 @@ import "./App.css";
 import React, { useEffect, useState } from "react";
 import Header from "./component/layout/Header/Header.js";
 import Footer from "./component/layout/Footer/Footer.js";
-import { BrowserRouter as Router, Route } from "react-router-dom";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import Home from "./component/Home/Home.js";
+import About from "./component/Home/About.js";
+import Contact from "./component/Home/Contact";
 import ProductDetails from "./component/Product/ProductDetails";
 import LoginSignup from "./component/User/LoginSignup.js";
 import store from "./store";
@@ -27,6 +29,8 @@ import Payment from "./component/Cart/Payment";
 import { Elements } from "@stripe/react-stripe-js";
 import { loadStripe } from "@stripe/stripe-js";
 import OrderSuccess from "./component/Cart/OrderSuccess";
+import MyOrders from "./component/Order/MyOrders";
+import OrderDetails from "./component/Order/OrderDetails"
 
 function App() {
   const { isAuthenticated, user } = useSelector((state) => state.user);
@@ -52,6 +56,8 @@ function App() {
       <Route exact path="/" component={Home} />
       <Route exact path="/product/:id" component={ProductDetails} />
       <Route exact path="/products" component={Products} />
+      <Route exact path="/about" component={About} />
+      <Route exact path="/contact" component={Contact} />
       <Route path="/products/:keyword" component={Products} />
       <Route exact path="/search" component={Search} />
       <ProtectedRoute exact path="/account" component={Profile} />
@@ -67,7 +73,7 @@ function App() {
       <Route path="/cart" component={Cart} />
       <Route path="/wishlist" component={Wishlist} />
       <ProtectedRoute exact path="/shipping" component={Shipping} />
-      <ProtectedRoute exact path="/order/confirm" component={ConfirmOrder} />
+      
 
       {stripeApiKey && (
         <Elements stripe={loadStripe(stripeApiKey)}>
@@ -75,6 +81,13 @@ function App() {
         </Elements>
       )}
       <ProtectedRoute exact path="/success" component={OrderSuccess} />
+      <ProtectedRoute exact path="/orders" component={MyOrders} />
+      <Switch>
+      <ProtectedRoute exact path="/order/confirm" component={ConfirmOrder} />
+      <ProtectedRoute exact path="/order/:id" component={OrderDetails} />
+        </Switch>
+    
+
       <Footer />
     </Router>
   );
