@@ -8,7 +8,7 @@ import PersonOutlineIcon from "@material-ui/icons/PersonOutline";
 import { useDispatch, useSelector } from "react-redux";
 import { clearErrors, login, register } from "../../actions/userAction";
 import { useAlert } from "react-alert";
-import Profile from "../../images/profile.png";
+import Profile from "../../images/Profile.png";
 
 const LoginSignup = ({ history, location }) => {
   const dispatch = useDispatch();

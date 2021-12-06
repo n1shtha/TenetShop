@@ -9,27 +9,27 @@ import Loader from "../layout/Loader/Loader";
 import { useAlert } from "react-alert";
 
 const OrderDetails = ({ match }) => {
-const { order, error, loading } = useSelector((state) => state.orderDetails);
+  const { order, error, loading } = useSelector((state) => state.orderDetails);
 
-const dispatch = useDispatch();
-const alert = useAlert();
+  const dispatch = useDispatch();
+  const alert = useAlert();
 
-useEffect(() => {
-  if (error) {
-    alert.error(error);
-    dispatch(clearErrors());
-  }
-  dispatch(getOrderDetails(match.params.id));
+  useEffect(() => {
+    if (error) {
+      alert.error(error);
+      dispatch(clearErrors());
+    }
+    dispatch(getOrderDetails(match.params.id));
   }, [dispatch, alert, error, match.params.id]);
-  return(
-      <Fragment>
-          {loading ? (
+  return (
+    <Fragment>
+      {loading ? (
         <Loader />
       ) : (
         <Fragment>
           <MetaData title="Order Details" />
           <div className="orderDetailsPage">
-          <div className="orderDetailsContainer">
+            <div className="orderDetailsContainer">
               <Typography component="h1">
                 Order #{order && order._id}
               </Typography>
@@ -37,7 +37,7 @@ useEffect(() => {
               <div className="orderDetailsContainerBox">
                 <div>
                   <p>Name:</p>
-                  <span>{order?.user && order.user.name}</span>
+                  <span>{order.user && order.user.name}</span>
                 </div>
                 <div>
                   <p>Phone:</p>
@@ -71,8 +71,8 @@ useEffect(() => {
                   </p>
                 </div>
                 <div>
-                  <p>Amount:</p>
-                  <span>{order.totalPrice && order.totalPrice}</span>
+                  <p>Amount: </p>
+                  <span>₹{order.totalPrice && order.totalPrice}</span>
                 </div>
               </div>
 
@@ -109,12 +109,12 @@ useEffect(() => {
                     </div>
                   ))}
               </div>
-              </div>
-              </div>
-              </Fragment>
-      )}
+            </div>
+          </div>
         </Fragment>
+      )}
+    </Fragment>
   );
 };
 
-  export default OrderDetails;
+export default OrderDetails;

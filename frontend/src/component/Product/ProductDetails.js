@@ -18,7 +18,7 @@ import {
   Button,
 } from "@material-ui/core";
 import { Rating } from "@material-ui/lab";
-import { newReview} from "../../actions/productAction";
+import { newReview } from "../../actions/productAction";
 import { NEW_REVIEW_RESET } from "../../constants/productConstants";
 
 const ProductDetails = ({ match }) => {
@@ -43,7 +43,6 @@ const ProductDetails = ({ match }) => {
   const [open, setOpen] = useState(false);
   const [rating, setRating] = useState(0);
   const [comment, setComment] = useState("");
-
 
   const increaseQuantity = () => {
     if (product.stock <= quantity) return;
@@ -101,7 +100,6 @@ const ProductDetails = ({ match }) => {
     dispatch(getProductDetails(match.params.id));
   }, [dispatch, match.params.id, error, alert, reviewError, success]);
 
-
   return (
     <Fragment>
       {loading ? (
@@ -130,7 +128,9 @@ const ProductDetails = ({ match }) => {
 
               <div className="detailsBlock-2">
                 <Rating {...options} />
-                <span className="detailsBlock-2-span" >({product?.numOfReviews} reviews)</span>
+                <span className="detailsBlock-2-span">
+                  ({product?.numOfReviews} reviews)
+                </span>
               </div>
 
               <div className="detailsBlock-3">
@@ -141,7 +141,12 @@ const ProductDetails = ({ match }) => {
                     <input readOnly value={quantity} type="number" />
                     <button onClick={increaseQuantity}>+</button>
                   </div>
-                  <button disabled={product.stock < 1? true: false} onClick={addToCartHandler}>ADD TO CART</button>
+                  <button
+                    disabled={product.stock < 1 ? true : false}
+                    onClick={addToCartHandler}
+                  >
+                    ADD TO CART
+                  </button>
                   <button onClick={addToListHandler}>ADD TO WISHLIST </button>
                 </div>
                 <p>
@@ -156,7 +161,9 @@ const ProductDetails = ({ match }) => {
                 Description: <p>{product?.description}</p>
               </div>
 
-              <button onClick={submitReviewToggle} className="submitReview">SUBMIT REVIEW</button>
+              <button onClick={submitReviewToggle} className="submitReview">
+                SUBMIT REVIEW
+              </button>
             </div>
           </div>
 
@@ -186,7 +193,7 @@ const ProductDetails = ({ match }) => {
               <Button onClick={submitReviewToggle} color="secondary">
                 Cancel
               </Button>
-              <Button  onClick ={reviewSubmitHandler} color="primary">
+              <Button onClick={reviewSubmitHandler} color="primary">
                 Submit
               </Button>
             </DialogActions>
