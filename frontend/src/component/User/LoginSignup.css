@@ -15,7 +15,7 @@
 .loginSignupBox {
   background-color: #f2f1ef;
   width: 30vw;
-  height: 70vh;
+  height: 100vh;
   box-sizing: border-box;
   border: thin;
   border-radius: 2px;
@@ -27,6 +27,13 @@
   height: 3vmax;
 }
 
+.hr{
+  padding-left: 60%;
+  font: 0.9vmax"Raleway";
+  padding-bottom: 9vmax;
+ 
+  
+}
 .login_signup_toggle > p {
   color: black;
   font: 300 1vmax "Raleway";
