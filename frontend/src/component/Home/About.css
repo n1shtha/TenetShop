@@ -1,0 +1,23 @@
+.aboutHeading {
+  font-family: "Bodoni Moda", sans-serif;
+  color: rgba(0, 0, 0, 0.829);
+  font-size: 2vmax;
+  text-align: center;
+  font-weight: lighter;
+  width: 15vmax;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.171);
+  padding: 1vmax;
+  margin: 3vmax auto;
+}
+
+.aboutParagraph > p {
+  font-family: "Raleway", sans-serif;
+  color: #333333b2;
+  font-size: 0.9vmax;
+  text-align: left;
+  font-weight: lighter;
+  width: 50vmax;
+  padding: 1vmax;
+  margin: 1vmax auto;
+  line-height: 35px;
+}

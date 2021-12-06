@@ -30,6 +30,7 @@ const Products = ({ match }) => {
   const setCurrentPageNo = (e) => {
     setCurrentPage(e);
   };
+
   const priceHandler = (event, newPrice) => {
     setPrice(newPrice);
   };

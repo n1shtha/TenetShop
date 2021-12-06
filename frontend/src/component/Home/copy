@@ -1,0 +1,206 @@
+import React from "react";
+import { Fragment } from "react";
+import "./About.css";
+import MetaData from "../layout/MetaData";
+
+const About = () => {
+  return (
+    <Fragment>
+      <MetaData title="About us" />
+      <h2 className="aboutHeading">Who are we?</h2>
+      <div className="aboutParagraph">
+        <p>
+          Consequat incididunt veniam amet ad aute velit. Quis mollit in qui
+          minim ea consectetur reprehenderit et labore. Deserunt et esse aliqua
+          voluptate consectetur. Eiusmod magna ad proident cupidatat ullamco.
+          Tempor irure ad excepteur laboris dolor officia. Cupidatat eiusmod
+          Lorem nulla ad est excepteur aliqua dolor Lorem. Fugiat exercitation
+          id irure minim et occaecat. Laboris sint incididunt enim ipsum
+          consectetur. Consectetur veniam ea excepteur esse id. Et qui aliquip
+          nostrud excepteur commodo enim quis ex id.
+        </p>
+        <p>
+          Consectetur dolore nisi proident nostrud amet est sit occaecat. Ipsum
+          qui magna proident aliqua nostrud elit sint aliquip. Mollit cupidatat
+          cillum irure pariatur. Occaecat veniam non deserunt excepteur est
+          veniam dolor. Ex qui exercitation cupidatat officia. Amet consectetur
+          occaecat est duis sunt ut aliqua elit ex. Mollit officia nulla sunt
+          nulla duis reprehenderit. Deserunt ipsum sint sint cupidatat. Deserunt
+          ut mollit cupidatat excepteur exercitation exercitation ea sunt. Aute
+          aute mollit aliquip est irure incididunt laborum non incididunt.
+        </p>
+        <p>
+          Proident id minim excepteur amet. Duis excepteur esse et dolor
+          deserunt nulla ipsum. Non labore veniam elit ipsum nisi pariatur
+          incididunt mollit. Sit ad et aute excepteur. Incididunt ex eiusmod
+          aliqua amet dolor veniam exercitation sint pariatur. Sunt cillum dolor
+          dolore reprehenderit veniam id veniam ipsum Lorem. Pariatur minim quis
+          exercitation duis veniam elit. Id ea nulla qui deserunt exercitation
+          occaecat sit. Enim incididunt nisi aliquip incididunt ea excepteur
+          dolore. Sunt duis dolore nostrud ex.
+        </p>
+      </div>
+    </Fragment>
+  );
+};
+
+export default About;
+
+.aboutHeading {
+    font-family: "Bodoni Moda", sans-serif;
+    color: rgba(0, 0, 0, 0.829);
+    font-size: 2vmax;
+    text-align: center;
+    font-weight: lighter;
+    width: 15vmax;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.171);
+    padding: 1vmax;
+    margin: 3vmax auto;
+  }
+  
+  .aboutParagraph > p {
+    font-family: "Raleway", sans-serif;
+    color: #333333b2;
+    font-size: 0.9vmax;
+    text-align: left;
+    font-weight: lighter;
+    width: 50vmax;
+    padding: 1vmax;
+    margin: 1vmax auto;
+    line-height: 35px;
+  }
+
+  const Contact = () => {
+    return (
+      <Fragment>
+        <MetaData title="Contact" />
+        <h2 className="contactHeading">Get in touch with us!</h2>
+        <div className="contactParagraph">
+          <p>
+            We greatly value our customer relations. Please contact us using any
+            of the methods below and we will readily assist you with your problem.
+            For business related concerns, mail us at: tenetwatches@gmail.com
+          </p>
+          <div className="contactDetails">
+            <p>EMAIL: tenethelp@gmail.com</p>
+            <p>TELEPHONE: +1 412-278-5539</p>
+            <p>LOCATION: 1730 Cameo St, Hartsville,</p>
+            <p> South Carolina (SC)</p>
+          </div>
+        </div>
+        <h2 className="faqHeading">FAQs</h2>
+        <div className="faqList">
+          <ul>
+            <li>Irure aute labore quis eiusmod voluptate consectetur?</li>
+            <p>
+              Adipisicing adipisicing minim officia officia elit nisi proident
+              sint. Commodo incididunt consectetur exercitation nisi mollit dolor
+              amet adipisicing. Sit nostrud ut nostrud pariatur sint irure aliqua
+              laborum.
+            </p>
+            <li>Nulla id commodo ea labore qui Lorem?</li>
+            <p>
+              Aliqua minim laboris enim qui qui eu cupidatat pariatur. Mollit enim
+              laborum fugiat labore sint. Id nisi occaecat excepteur eiusmod
+              nostrud aliquip.
+            </p>
+            <li>Aliqua ipsum Lorem commodo velit officia?</li>
+            <p>
+              Excepteur ea sint occaecat cillum id exercitation irure et. Aute
+              occaecat nostrud id ut. Ad sint cillum adipisicing magna aliqua
+              aliquip non.
+            </p>
+            <li>
+              Sint officia et exercitation amet duis pariatur non ullamco ut?
+            </li>
+            <p>
+              Enim est ipsum aliqua ad cillum dolore irure consectetur
+              adipisicing. Nisi laborum eu commodo minim culpa exercitation minim
+              excepteur. Duis eu sint laborum tempor esse ullamco fugiat et
+              labore.
+            </p>
+            <li>
+              Dolor ex ut consectetur cillum irure magna anim fugiat tempor?
+            </li>
+            <p>
+              Sit ipsum nostrud sunt sint. Sit nostrud ut nisi magna. Ullamco
+              incididunt veniam elit in eiusmod cillum aliqua esse.
+            </p>
+            <li>Cupidatat amet do ut magna proident do amet dolor.</li>
+            <p>
+              Do tempor eiusmod velit dolor nulla dolore nulla ipsum enim. Tempor
+              minim dolore nisi adipisicing eu. Irure laboris laboris do aliqua ut
+              elit labore eiusmod.
+            </p>
+          </ul>
+        </div>
+      </Fragment>
+    );
+  };
+  
+  export default Contact;
+
+  .contactHeading {
+    font-family: "Bodoni Moda", sans-serif;
+    color: rgba(0, 0, 0, 0.829);
+    font-size: 2vmax;
+    text-align: center;
+    font-weight: lighter;
+    width: 20vmax;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.171);
+    padding: 1vmax;
+    margin: 3vmax auto;
+  }
+  
+  .faqHeading {
+    font-family: "Bodoni Moda", sans-serif;
+    color: rgba(0, 0, 0, 0.829);
+    font-size: 2vmax;
+    text-align: center;
+    font-weight: lighter;
+    width: 5vmax;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.171);
+    padding: 1vmax;
+    margin: 3vmax auto;
+  }
+  
+  .contactParagraph > p {
+    font-family: "Raleway", sans-serif;
+    color: #333333b2;
+    font-size: 1vmax;
+    text-align: center;
+    width: 50vmax;
+    font-weight: lighter;
+    padding: 1vmax;
+    margin: 1vmax auto;
+    line-height: 35px;
+  }
+  
+  .contactDetails > p {
+    font-family: "Raleway", sans-serif;
+    color: rgba(0, 0, 0, 0.829);
+    font-size: 0.9vmax;
+    text-align: center;
+    justify-content: space-between;
+    font-weight: lighter;
+    width: 50vmax;
+    padding: 1vmax;
+    margin: 0.1vmax auto;
+  }
+  
+  .faqList > ul > li {
+    font-family: "Bodoni Moda", sans-serif;
+    font-size: 1.2vmax;
+    width: 60vmax;
+    padding: 1vmax;
+    margin: 0.1vmax auto;
+  }
+  
+  .faqList > ul > p {
+    font-family: "Raleway", sans-serif;
+    font-size: 1vmax;
+    color: #333333b2;
+    width: 60vmax;
+    padding: 1vmax;
+    margin: 0.1vmax auto;
+  }

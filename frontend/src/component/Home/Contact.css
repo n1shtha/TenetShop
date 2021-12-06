@@ -1,0 +1,64 @@
+.contactHeading {
+  font-family: "Bodoni Moda", sans-serif;
+  color: rgba(0, 0, 0, 0.829);
+  font-size: 2vmax;
+  text-align: center;
+  font-weight: lighter;
+  width: 20vmax;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.171);
+  padding: 1vmax;
+  margin: 3vmax auto;
+}
+
+.faqHeading {
+  font-family: "Bodoni Moda", sans-serif;
+  color: rgba(0, 0, 0, 0.829);
+  font-size: 2vmax;
+  text-align: center;
+  font-weight: lighter;
+  width: 5vmax;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.171);
+  padding: 1vmax;
+  margin: 3vmax auto;
+}
+
+.contactParagraph > p {
+  font-family: "Raleway", sans-serif;
+  color: #333333b2;
+  font-size: 1vmax;
+  text-align: center;
+  width: 50vmax;
+  font-weight: lighter;
+  padding: 1vmax;
+  margin: 1vmax auto;
+  line-height: 35px;
+}
+
+.contactDetails > p {
+  font-family: "Raleway", sans-serif;
+  color: rgba(0, 0, 0, 0.829);
+  font-size: 0.9vmax;
+  text-align: center;
+  justify-content: space-between;
+  font-weight: lighter;
+  width: 50vmax;
+  padding: 1vmax;
+  margin: 0.1vmax auto;
+}
+
+.faqList > ul > li {
+  font-family: "Bodoni Moda", sans-serif;
+  font-size: 1.2vmax;
+  width: 60vmax;
+  padding: 1vmax;
+  margin: 0.1vmax auto;
+}
+
+.faqList > ul > p {
+  font-family: "Raleway", sans-serif;
+  font-size: 1vmax;
+  color: #333333b2;
+  width: 60vmax;
+  padding: 1vmax;
+  margin: 0.1vmax auto;
+}

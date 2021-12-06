@@ -16,11 +16,11 @@ const Header = () => {
         <a href="\products" className="category">
           PRODUCTS
         </a>
-        <a href="\bestsellers" className="category">
-          BESTSELLERS
+        <a href="\about" className="category">
+          ABOUT US
         </a>
-        <a href="\sale" className="category">
-          DIWALI SALE
+        <a href="\contact" className="category">
+          CONTACT
         </a>
       </div>
       <div>

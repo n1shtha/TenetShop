@@ -1,10 +1,8 @@
-
 import React from "react";
-import profilePng from "../../images/profile.png";
+import profilePng from "../../images/Profile.png";
 import { Rating } from "@material-ui/lab";
 
 const ReviewCard = ({ review }) => {
-  
   const options = {
     value: review?.rating,
     readOnly: true,
