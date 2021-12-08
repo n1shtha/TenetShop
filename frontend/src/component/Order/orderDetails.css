@@ -31,7 +31,7 @@
     font: 400 1vmax "Roboto";
     color: black;
   }
-  .orderDetailsContainerBox > div > span {
+  .orderDetailsContainerBox > div > p > span {
     margin: 0 1vmax;
     font: 100 1vmax "Roboto";
     color: #575757;
