@@ -29,6 +29,7 @@ export const createOrder = (order) => async (dispatch) => {
     dispatch({ type: CREATE_ORDER_SUCCESS, payload: data });
     dispatch({ type: CART_EMPTY });
     localStorage.removeItem("cartItems");
+    localStorage.removeItem("shippingInfo");
   } catch (error) {
     dispatch({
       type: CREATE_ORDER_FAIL,

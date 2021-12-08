@@ -36,21 +36,24 @@ const OrderDetails = ({ match }) => {
               <Typography>Shipping Info</Typography>
               <div className="orderDetailsContainerBox">
                 <div>
-                  <p>Name:</p>
-                  <span>{order.user && order.user.name}</span>
+                  <p>Name:
+                  <span>{order?.user && order.user.name}</span>
+                  </p>
                 </div>
                 <div>
-                  <p>Phone:</p>
+                  <p>Phone:
                   <span>
                     {order.shippingInfo && order.shippingInfo.phoneNo}
                   </span>
+                  </p>
                 </div>
                 <div>
-                  <p>Address:</p>
+                  <p>Address:
                   <span>
                     {order.shippingInfo &&
                       `${order.shippingInfo.address}, ${order.shippingInfo.city}, ${order.shippingInfo.state}, ${order.shippingInfo.pinCode}, ${order.shippingInfo.country}`}
                   </span>
+                  </p>
                 </div>
               </div>
               <Typography>Payment</Typography>
@@ -71,8 +74,9 @@ const OrderDetails = ({ match }) => {
                   </p>
                 </div>
                 <div>
-                  <p>Amount: </p>
+                  <p>Amount:
                   <span>₹{order.totalPrice && order.totalPrice}</span>
+                  </p>
                 </div>
               </div>
 
