@@ -8,12 +8,10 @@ import PersonOutlineIcon from "@material-ui/icons/PersonOutline";
 import { useDispatch, useSelector } from "react-redux";
 import { clearErrors, login, register } from "../../actions/userAction";
 import { useAlert } from "react-alert";
-import Profile from "../../images/profile.png";
+import Profile from "../../images/Profile.png";
 import GoogleLogin from "react-google-login";
 import axios from "axios";
-import {dispatchLogin} from '../../redux/authActions';
-
-
+import { dispatchLogin } from "../../redux/authActions";
 
 const LoginSignup = ({ history, location }) => {
   const dispatch = useDispatch();
@@ -99,20 +97,21 @@ const LoginSignup = ({ history, location }) => {
     }
   };
 
-  const responseGoogle = async(response) => {
-        //console.log(response.profieObj);
+  const responseGoogle = async (response) => {
+    //console.log(response.profieObj);
     try {
-      const res =  await axios.post('/api/v1/googlelogin', {tokenId: response.tokenId});
+      const res = await axios.post("/api/v1/googlelogin", {
+        tokenId: response.tokenId,
+      });
 
-      setUser({...user, error: '', success: res.data.msg});
-      localStorage.setItem('firstLogin',true);
+      setUser({ ...user, error: "", success: res.data.msg });
+      localStorage.setItem("firstLogin", true);
 
       dispatch(dispatchLogin());
-      history.push('/');
+      history.push("/");
     } catch (error) {
-      error.response.data.msg && 
-      
-      setUser({...user, error: error.response.data.msg, success: ''});
+      error.response.data.msg &&
+        setUser({ ...user, error: error.response.data.msg, success: "" });
     }
   };
 
@@ -160,16 +159,16 @@ const LoginSignup = ({ history, location }) => {
                 <Link to="/password/forgot">Forgot password?</Link>
                 <input type="submit" value="LOGIN" className="loginBtn" />
                 <div className="hr">
-              <div className="social">
-                <GoogleLogin
-                clientId="932382815810-u2rvrnshr1jnnal448ikhvap4serp8q1.apps.googleusercontent.com"
-                buttonText="Login with Google"
-                onSuccess={responseGoogle}
-                cookiePolicy={'single_host_origin'}/>
-              </div>
-              </div>
+                  <div className="social">
+                    <GoogleLogin
+                      clientId="932382815810-u2rvrnshr1jnnal448ikhvap4serp8q1.apps.googleusercontent.com"
+                      buttonText="Login with Google"
+                      onSuccess={responseGoogle}
+                      cookiePolicy={"single_host_origin"}
+                    />
+                  </div>
+                </div>
               </form>
-             
               <form
                 className="signupForm"
                 ref={registerTab}
