@@ -11,16 +11,15 @@ import MetaData from "../layout/MetaData";
 import LaunchIcon from "@material-ui/icons/Launch";
 
 const MyOrders = () => {
+  const dispatch = useDispatch();
 
-    const dispatch = useDispatch();
+  const alert = useAlert();
 
-    const alert = useAlert();
-  
-    const { loading, error, orders } = useSelector((state) => state.myOrders);
-    const { user } = useSelector((state) => state.user);
+  const { loading, error, orders } = useSelector((state) => state.myOrders);
+  const { user } = useSelector((state) => state.user);
 
-    const columns = [
-        { field: "id", headerName: "Order ID", minWidth: 300, flex: 1 },
+  const columns = [
+    { field: "id", headerName: "Order ID", minWidth: 300, flex: 1 },
 
     {
       field: "status",
@@ -32,41 +31,39 @@ const MyOrders = () => {
           ? "greenColor"
           : "redColor";
       },
-    
     },
     {
-        field: "itemsQty",
-        headerName: "Items Qty",
-        type: "number",
-      minWidth: 150,
+      field: "itemsQty",
+      headerName: "Items",
+      type: "number",
+      minWidth: 160,
       flex: 0.3,
     },
     {
-        field: "amount",
-        headerName: "Amount",
-        type: "number",
-        minWidth: 270,
-        flex: 0.5,
+      field: "amount",
+      headerName: "Amount",
+      type: "number",
+      minWidth: 270,
+      flex: 0.5,
     },
     {
-        field: "actions",
-        flex: 0.3,
-        headerName: "Actions",
-        minWidth: 150,
-        type: "number",
-        sortable: false,
-        renderCell: (params) => {
-          return (
-            <Link to={`/order/${params.getValue(params.id, "id")}`}>
-              <LaunchIcon />
-            </Link>
-          )
-        }
-    }
-
-    ];
-    const rows= [];
-    orders &&
+      field: "actions",
+      flex: 0.3,
+      headerName: "Actions",
+      minWidth: 150,
+      type: "number",
+      sortable: false,
+      renderCell: (params) => {
+        return (
+          <Link to={`/order/${params.getValue(params.id, "id")}`}>
+            <LaunchIcon />
+          </Link>
+        );
+      },
+    },
+  ];
+  const rows = [];
+  orders &&
     orders.forEach((item, index) => {
       rows.push({
         itemsQty: item.orderItems.length,
@@ -76,19 +73,19 @@ const MyOrders = () => {
       });
     });
 
-    useEffect(() => {
-        if (error) {
-          alert.error(error);
-          dispatch(clearErrors());
-        }
-    
-        dispatch(myOrders());
-      }, [dispatch, alert, error]);
+  useEffect(() => {
+    if (error) {
+      alert.error(error);
+      dispatch(clearErrors());
+    }
 
-    return (
-        <Fragment>
-             <MetaData title={`${user.name} - Orders`} />
-             {loading ? (
+    dispatch(myOrders());
+  }, [dispatch, alert, error]);
+
+  return (
+    <Fragment>
+      <MetaData title={`${user.name} - Orders`} />
+      {loading ? (
         <Loader />
       ) : (
         <div className="myOrdersPage">
@@ -104,8 +101,8 @@ const MyOrders = () => {
           <Typography id="myOrdersHeading">{user.name}'s Orders</Typography>
         </div>
       )}
-        </Fragment>
-    )
-}
+    </Fragment>
+  );
+};
 
-export default MyOrders
+export default MyOrders;

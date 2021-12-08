@@ -24,46 +24,44 @@ const About = () => {
       <h2 className="faqHeading">FAQs</h2>
       <div className="faqList">
         <ul>
-          <li>Irure aute labore quis eiusmod voluptate consectetur?</li>
+          <li>Can I make changes to my order before it ships?</li>
           <p>
-            Adipisicing adipisicing minim officia officia elit nisi proident
-            sint. Commodo incididunt consectetur exercitation nisi mollit dolor
-            amet adipisicing. Sit nostrud ut nostrud pariatur sint irure aliqua
-            laborum.
+            Unfortunately, we can’t make changes or cancel an order after it’s
+            been submitted. An item may only be canceled if it is on pre-order.
+            If you would like to cancel a pre-ordered item, shoot an email to
+            tenethelp@gmail.com with your order number and we'll handle that for
+            you.
           </p>
-          <li>Nulla id commodo ea labore qui Lorem?</li>
+          <li>Why isn't my payment going through?</li>
           <p>
-            Aliqua minim laboris enim qui qui eu cupidatat pariatur. Mollit enim
-            laborum fugiat labore sint. Id nisi occaecat excepteur eiusmod
-            nostrud aliquip.
+            Please double check to ensure you're using the proper billing zip
+            code associated with the credit card. Additionally, in order to pay
+            with a credit card, your order must be above 200 INR.
           </p>
-          <li>Aliqua ipsum Lorem commodo velit officia?</li>
+          <li>How long will it take for my order to arrive?</li>
           <p>
-            Excepteur ea sint occaecat cillum id exercitation irure et. Aute
-            occaecat nostrud id ut. Ad sint cillum adipisicing magna aliqua
-            aliquip non.
+            Currently, orders can take 1-4 business days to process before
+            shipping. From there, shipping times are dependent upon location.
+            Check out our shipping page for more information on when to expect
+            your package.
           </p>
-          <li>
-            Sint officia et exercitation amet duis pariatur non ullamco ut?
-          </li>
+          <li>What is your return/exchange policy?</li>
           <p>
-            Enim est ipsum aliqua ad cillum dolore irure consectetur
-            adipisicing. Nisi laborum eu commodo minim culpa exercitation minim
-            excepteur. Duis eu sint laborum tempor esse ullamco fugiat et
-            labore.
+            All products sold on Tenet are guaranteed for 30 days after purchase
+            date. If any issues arise during that time, most items can be
+            returned for a refund or exchange.
           </p>
-          <li>
-            Dolor ex ut consectetur cillum irure magna anim fugiat tempor?
-          </li>
+          <li>When will I receive my refund?</li>
           <p>
-            Sit ipsum nostrud sunt sint. Sit nostrud ut nisi magna. Ullamco
-            incididunt veniam elit in eiusmod cillum aliqua esse.
+            If returning by mail, you should receive your refund upon first
+            carrier scan. Please note, it can take 3-5 business days for a
+            refund to credit back to your original form of payment.
           </p>
-          <li>Cupidatat amet do ut magna proident do amet dolor.</li>
+          <li>How can I get a discount code?</li>
           <p>
-            Do tempor eiusmod velit dolor nulla dolore nulla ipsum enim. Tempor
-            minim dolore nisi adipisicing eu. Irure laboris laboris do aliqua ut
-            elit labore eiusmod.
+            If you're a first-time shopper and haven't signed up for our email
+            or text lists yet, you just might get a little something special
+            once you do!
           </p>
         </ul>
       </div>

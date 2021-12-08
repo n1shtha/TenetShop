@@ -45,18 +45,21 @@ const ConfirmOrder = ({ history }) => {
             <Typography>Shipping Info</Typography>
             <div className="confirmshippingAreaBox">
               <div>
-                <p>Name:
-                <span>{user.name}</span>
+                <p>
+                  Name:
+                  <span>{user.name}</span>
                 </p>
               </div>
               <div>
-                <p>Phone:
-                <span>{shippingInfo.phoneNo}</span>
+                <p>
+                  Phone:
+                  <span>{shippingInfo.phoneNo}</span>
                 </p>
               </div>
               <div>
-                <p>Address:
-                <span>{address}</span>
+                <p>
+                  Address:
+                  <span>{address}</span>
                 </p>
               </div>
             </div>
@@ -86,18 +89,21 @@ const ConfirmOrder = ({ history }) => {
             <Typography>Order Summary</Typography>
             <div>
               <div>
-                <p>Subtotal:
-                <span>₹{subtotal}</span>
+                <p>
+                  Subtotal:
+                  <span>₹{subtotal}</span>
                 </p>
               </div>
               <div>
-                <p>Shipping Charges:
-                <span>₹{shippingCharges}</span>
+                <p>
+                  Shipping Charges:
+                  <span>₹{shippingCharges}</span>
                 </p>
               </div>
               <div>
-                <p>GST:
-                <span>₹{tax}</span>
+                <p>
+                  GST:
+                  <span>₹{tax}</span>
                 </p>
               </div>
             </div>
@@ -105,7 +111,6 @@ const ConfirmOrder = ({ history }) => {
             <div className="orderSummaryTotal">
               <p>
                 <b>Total:</b>
-              
               </p>
               <span>₹{totalPrice}</span>
             </div>

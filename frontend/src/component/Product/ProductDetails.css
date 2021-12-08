@@ -132,6 +132,7 @@
 }
 
 .detailsBlock-4 > p {
+  width: 80%;
   color: rgba(0, 0, 0, 0.534);
   font: 300 0.8vmax "Raleway";
 }
