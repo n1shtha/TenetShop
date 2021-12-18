@@ -10,34 +10,31 @@ const About = () => {
       <h2 className="aboutHeading">Who are we?</h2>
       <div className="aboutParagraph">
         <p>
-          Consequat incididunt veniam amet ad aute velit. Quis mollit in qui
-          minim ea consectetur reprehenderit et labore. Deserunt et esse aliqua
-          voluptate consectetur. Eiusmod magna ad proident cupidatat ullamco.
-          Tempor irure ad excepteur laboris dolor officia. Cupidatat eiusmod
-          Lorem nulla ad est excepteur aliqua dolor Lorem. Fugiat exercitation
-          id irure minim et occaecat. Laboris sint incididunt enim ipsum
-          consectetur. Consectetur veniam ea excepteur esse id. Et qui aliquip
-          nostrud excepteur commodo enim quis ex id.
+          Tenet has over 57 stores in India across 27 cities offering more than
+          40 international watch brands in swiss, premium, high fashion and
+          fashion segment.
         </p>
         <p>
-          Consectetur dolore nisi proident nostrud amet est sit occaecat. Ipsum
-          qui magna proident aliqua nostrud elit sint aliquip. Mollit cupidatat
-          cillum irure pariatur. Occaecat veniam non deserunt excepteur est
-          veniam dolor. Ex qui exercitation cupidatat officia. Amet consectetur
-          occaecat est duis sunt ut aliqua elit ex. Mollit officia nulla sunt
-          nulla duis reprehenderit. Deserunt ipsum sint sint cupidatat. Deserunt
-          ut mollit cupidatat excepteur exercitation exercitation ea sunt. Aute
-          aute mollit aliquip est irure incididunt laborum non incididunt.
+          At the Tenet Watch Store there's nothing more we'd like to do, than
+          bring watches and watch-lovers together. Our stellar collection, is a
+          fine showcase of masterpieces that exhibit craftsmanship, designs that
+          represent timeless tradition, and embrace innovation. A parade
+          featuring over 30 top international labels that inspires people to add
+          to their existing collection. As India's leading retailer of
+          international watch brands, Tenet Watch Store takes a personal
+          interest in those who wear and cherish quality timepieces, those who
+          know it's the only way to tell time. And, if you're wondering what
+          else sets us apart, it's our signature trio of perks one enjoys every
+          time he/she walks in, and chooses a watch from our vast collection.
         </p>
         <p>
-          Proident id minim excepteur amet. Duis excepteur esse et dolor
-          deserunt nulla ipsum. Non labore veniam elit ipsum nisi pariatur
-          incididunt mollit. Sit ad et aute excepteur. Incididunt ex eiusmod
-          aliqua amet dolor veniam exercitation sint pariatur. Sunt cillum dolor
-          dolore reprehenderit veniam id veniam ipsum Lorem. Pariatur minim quis
-          exercitation duis veniam elit. Id ea nulla qui deserunt exercitation
-          occaecat sit. Enim incididunt nisi aliquip incididunt ea excepteur
-          dolore. Sunt duis dolore nostrud ex.
+          Every order placed on our website is fulfilled directly from one of
+          our 76 stores across India. You can always count on us for free 1-2
+          day delivery, hassle-free returns, great prices, and awesome, extra
+          speedy customer service. If you are in need of any assistance post
+          your purchase, you can walk in to one of our stores and our helpful
+          staff is always available to answer any questions you may have or help
+          in any way that is required. We are at your service!
         </p>
       </div>
     </Fragment>

@@ -11,7 +11,13 @@ import Typography from "@material-ui/core/Typography";
 import MetaData from "../layout/MetaData";
 
 const categories = ["Watch", "Bracelet", "Strap", "Ring"];
-const brands = ["Daniel Wellington", "Fossil", "Titan", "Rolex"];
+const brands = [
+  "Daniel Wellington",
+  "Fossil",
+  "Titan",
+  "Rolex",
+  "Michael Kors",
+];
 
 const Products = ({ match }) => {
   const dispatch = useDispatch();

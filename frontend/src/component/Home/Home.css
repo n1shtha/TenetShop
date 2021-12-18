@@ -3,9 +3,9 @@ body {
 }
 
 .banner {
-  background-image: url("../../../src/images/banner8.jpg");
+  background-image: url("../../../src/images/bannerfin1.png");
   background-size: cover;
-  height: 660px;
+  height: 720px;
   display: flex;
   flex-direction: column;
   text-align: center;
@@ -15,11 +15,14 @@ body {
 }
 
 .banner > h1 {
+  bottom: 8px;
+  right: 8px;
   margin: 5vmax;
   font: 400 2.5vmax "Bodoni Moda";
 }
 
 .banner > p {
+  color: white;
   font: 300 1.7vmax "Raleway";
 }
 

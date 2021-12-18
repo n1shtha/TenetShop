@@ -13,7 +13,7 @@ const Home = () => {
   const { loading, error, products } = useSelector((state) => state.products);
 
   useEffect(() => {
-    if(error){
+    if (error) {
       alert.error(error);
       dispatch(clearErrors());
     }
@@ -23,21 +23,19 @@ const Home = () => {
   return (
     <Fragment>
       {loading ? (
-        <Loader/>
-        ): (
+        <Loader />
+      ) : (
         <Fragment>
-        <MetaData title="TENET" />
-        <div className="banner">
-         <p></p>
-        </div>
-        <h2 className="homeHeading">FEATURED PRODUCTS</h2>
-        <div className="container" id="container">
-          {products && 
-           products.map((product) => (
-           <ProductCard key={product._id} product={product} />
-           ))}
-        </div>
-      </Fragment>
+          <MetaData title="TENET" />
+          <div className="banner"></div>
+          <h2 className="homeHeading">FEATURED PRODUCTS</h2>
+          <div className="container" id="container">
+            {products &&
+              products.map((product) => (
+                <ProductCard key={product._id} product={product} />
+              ))}
+          </div>
+        </Fragment>
       )}
     </Fragment>
   );
